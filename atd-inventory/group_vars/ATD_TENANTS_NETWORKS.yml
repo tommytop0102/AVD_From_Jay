@@ -1,0 +1,63 @@
+# svi_profiles:
+#   - profile: GENERIC
+#     mtu: 1560
+#     enabled: true
+#   - profile: GENERIC_FULL
+#     name: GENERIC Name
+#     mtu: 1560
+#     enabled: true
+#     ip_address_virtual: 10.1.10.254/24
+#   - profile: WITH_NO_MTU
+#     enabled: true
+#   - profile: WITH_SNOOPING
+#     enabled: true
+#     igmp_snooping_enabled: false
+
+tenants:
+  # Tenant A Specific Information - VRFs / VLANs
+  - name: bluevrf_tenant
+    mac_vrf_vni_base: 30000
+    # Optional example enabling multicast for tenant
+    # Requires enabling of multicast in ATD_FABRIC.yml
+    # evpn_l2_multicast:
+    #   enabled: true
+    #   underlay_l2_multicast_group_ipv4_pool: 232.0.0.0/20
+    #   underlay_l2_multicast_group_ipv4_pool_offset: 2
+    vrfs:
+      - name: bluevrf
+        vrf_vni: 100
+        vtep_diagnostic:
+          loopback: 100
+          loopback_ip_range: 10.255.1.0/24
+        svis:
+          - id: 2300
+            name: bluenet1
+            # tags: [opzone]
+            enabled: true
+            ip_address_virtual: 192.168.11.1/24
+          - id: 2301
+            name: bluenet2
+            # tags: [opzone]
+            enabled: true
+            ip_address_virtual: 192.168.12.1/24
+    l2vlans:
+      - id: 20
+        vni_override: 30002
+        name: ExternalNetwork
+        # tags: [vmotion]
+  # - name: Tenant_B
+  #   mac_vrf_vni_base: 20000
+  #   vrfs:
+  #     - name: Tenant_B_OP_Zone
+  #       vrf_vni: 20
+  #       svis:
+  #         - id: 210
+  #           name: Tenant_B_OP_Zone_1
+  #           tags: ['opzone']
+  #           profile: WITH_NO_MTU
+  #           ip_address_virtual: 10.2.10.1/24
+  #         - id: 211
+  #           name: Tenant_B_OP_Zone_2
+  #           tags: ['opzone']
+  #           profile: GENERIC
+  #           ip_address_virtual: 10.2.11.1/24
