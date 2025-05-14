@@ -1,0 +1,11 @@
+---
+
+
+network_ports:
+  - switches:
+      - s1-leaf[2]
+    switch_ports: # Ex Ethernet1-48 or Ethernet2-3/1-48
+      - Ethernet4
+    description: Leaf2_Access_eth4
+    mode: access
+    vlans: "2300"

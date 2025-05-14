@@ -13,10 +13,6 @@ router_bgp:
   maximum_paths:
     paths: 4
     ecmp: 4
-  redistribute:
-    connected:
-      enabled: true
-      route_map: RM-CONN-2-BGP
   graceful_restart:
     enabled: true
     restart_time: 300
@@ -52,33 +48,37 @@ router_bgp:
   - ip_address: 10.255.251.5
     peer_group: MLAG-IPv4-UNDERLAY-PEER
     peer: s1-leaf4
-    description: s1-leaf4_Vlan4093
+    description: s1-leaf4
   - ip_address: 192.168.51.8
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65001'
+    remote_as: '64999'
     peer: s1-spine1
     description: s1-spine1_Ethernet4
   - ip_address: 192.168.51.10
     peer_group: IPv4-UNDERLAY-PEERS
-    remote_as: '65001'
+    remote_as: '64999'
     peer: s1-spine2
     description: s1-spine2_Ethernet4
   - ip_address: 192.168.246.1
     peer_group: EVPN-OVERLAY-PEERS
     peer: s1-spine1
-    description: s1-spine1_Loopback0
-    remote_as: '65001'
+    description: s1-spine1
+    remote_as: '64999'
   - ip_address: 192.168.246.2
     peer_group: EVPN-OVERLAY-PEERS
     peer: s1-spine2
-    description: s1-spine2_Loopback0
-    remote_as: '65001'
+    description: s1-spine2
+    remote_as: '64999'
+  redistribute_routes:
+  - source_protocol: connected
+    route_map: RM-CONN-2-BGP
   address_family_evpn:
     peer_groups:
     - name: EVPN-OVERLAY-PEERS
       activate: true
   vrfs:
   - name: bluevrf
+    router_id: 192.168.246.5
     rd: 192.168.246.5:100
     route_targets:
       import:
@@ -89,15 +89,11 @@ router_bgp:
       - address_family: evpn
         route_targets:
         - 100:100
-    router_id: 192.168.246.5
-    redistribute:
-      connected:
-        enabled: true
-        route_map: RM-CONN-2-BGP-VRFS
+    redistribute_routes:
+    - source_protocol: connected
     neighbors:
     - ip_address: 10.255.251.5
       peer_group: MLAG-IPv4-UNDERLAY-PEER
-      description: s1-leaf4_Vlan3099
   vlan_aware_bundles:
   - name: bluevrf
     rd: 192.168.246.5:100
@@ -127,12 +123,6 @@ vlan_internal_order:
   range:
     beginning: 1006
     ending: 1199
-aaa_root:
-  disabled: true
-config_end: true
-enable_password:
-  disabled: true
-transceiver_qsfp_default_mode_4x10: true
 ip_name_servers:
 - ip_address: 192.168.2.1
   vrf: default
@@ -152,7 +142,7 @@ vrfs:
   ip_routing: true
 management_interfaces:
 - name: Management0
-  description: OOB_MANAGEMENT
+  description: oob_management
   shutdown: false
   vrf: default
   ip_address: 192.168.0.14/24
@@ -165,12 +155,12 @@ management_api_http:
 vlans:
 - id: 4093
   tenant: system
-  name: MLAG_L3
+  name: LEAF_PEER_L3
   trunk_groups:
-  - MLAG
+  - LEAF_PEER_L3
 - id: 4094
   tenant: system
-  name: MLAG
+  name: MLAG_PEER
   trunk_groups:
   - MLAG
 - id: 2300
@@ -180,21 +170,21 @@ vlans:
   name: bluenet2
   tenant: bluevrf_tenant
 - id: 3099
-  name: MLAG_L3_VRF_bluevrf
+  name: MLAG_iBGP_bluevrf
   trunk_groups:
-  - MLAG
+  - LEAF_PEER_L3
   tenant: bluevrf_tenant
 - id: 20
   name: ExternalNetwork
   tenant: bluevrf_tenant
 vlan_interfaces:
 - name: Vlan4093
-  description: MLAG_L3
+  description: MLAG_PEER_L3_PEERING
   shutdown: false
   mtu: 1500
   ip_address: 10.255.251.4/31
 - name: Vlan4094
-  description: MLAG
+  description: MLAG_PEER
   shutdown: false
   no_autostate: true
   mtu: 1500
@@ -215,26 +205,26 @@ vlan_interfaces:
   tenant: bluevrf_tenant
   type: underlay_peering
   shutdown: false
-  description: MLAG_L3_VRF_bluevrf
+  description: 'MLAG_PEER_L3_iBGP: vrf bluevrf'
   vrf: bluevrf
   mtu: 1500
   ip_address: 10.255.251.4/31
 port_channel_interfaces:
 - name: Port-Channel1
-  description: MLAG_s1-leaf4_Port-Channel1
-  switchport:
-    enabled: true
-    mode: trunk
-    trunk:
-      groups:
-      - MLAG
+  description: MLAG_PEER_s1-leaf4_Po1
+  type: switched
   shutdown: false
+  mode: trunk
+  trunk_groups:
+  - LEAF_PEER_L3
+  - MLAG
 ethernet_interfaces:
 - name: Ethernet1
   peer: s1-leaf4
   peer_interface: Ethernet1
   peer_type: mlag_peer
-  description: MLAG_s1-leaf4_Ethernet1
+  description: MLAG_PEER_s1-leaf4_Ethernet1
+  type: port-channel-member
   shutdown: false
   channel_group:
     id: 1
@@ -243,7 +233,8 @@ ethernet_interfaces:
   peer: s1-leaf4
   peer_interface: Ethernet6
   peer_type: mlag_peer
-  description: MLAG_s1-leaf4_Ethernet6
+  description: MLAG_PEER_s1-leaf4_Ethernet6
+  type: port-channel-member
   shutdown: false
   channel_group:
     id: 1
@@ -252,21 +243,19 @@ ethernet_interfaces:
   peer: s1-spine1
   peer_interface: Ethernet4
   peer_type: spine
-  description: P2P_s1-spine1_Ethernet4
+  description: P2P_LINK_TO_S1-SPINE1_Ethernet4
   shutdown: false
   mtu: 1500
-  switchport:
-    enabled: false
+  type: routed
   ip_address: 192.168.51.9/31
 - name: Ethernet3
   peer: s1-spine2
   peer_interface: Ethernet4
   peer_type: spine
-  description: P2P_s1-spine2_Ethernet4
+  description: P2P_LINK_TO_S1-SPINE2_Ethernet4
   shutdown: false
   mtu: 1500
-  switchport:
-    enabled: false
+  type: routed
   ip_address: 192.168.51.11/31
 - name: Ethernet4
   ip_address: 10.192.195.21/24
@@ -296,25 +285,17 @@ route_maps:
     type: permit
     match:
     - ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY
-- name: RM-CONN-2-BGP-VRFS
-  sequence_numbers:
-  - sequence: 10
-    type: deny
-    match:
-    - ip address prefix-list PL-MLAG-PEER-VRFS
-  - sequence: 20
-    type: permit
 loopback_interfaces:
 - name: Loopback0
-  description: ROUTER_ID
+  description: EVPN_Overlay_Peering
   shutdown: false
   ip_address: 192.168.246.5/32
 - name: Loopback1
-  description: VXLAN_TUNNEL_SOURCE
+  description: VTEP_VXLAN_Tunnel_Source
   shutdown: false
   ip_address: 192.168.236.5/32
 - name: Loopback100
-  description: DIAG_VRF_bluevrf
+  description: bluevrf_VTEP_DIAGNOSTICS
   shutdown: false
   vrf: bluevrf
   ip_address: 10.255.1.5/32
@@ -325,10 +306,6 @@ prefix_lists:
     action: permit 192.168.246.0/24 eq 32
   - sequence: 20
     action: permit 192.168.236.0/24 eq 32
-- name: PL-MLAG-PEER-VRFS
-  sequence_numbers:
-  - sequence: 10
-    action: permit 10.255.251.4/31
 router_bfd:
   multihop:
     interval: 1200
@@ -338,7 +315,7 @@ ip_igmp_snooping:
   globally_enabled: true
 ip_virtual_router_mac_address: 02:04:02:04:02:04
 vxlan_interface:
-  vxlan1:
+  Vxlan1:
     description: s1-leaf3_VTEP
     vxlan:
       udp_port: 4789

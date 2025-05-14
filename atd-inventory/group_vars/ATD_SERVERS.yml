@@ -1,26 +1,26 @@
 ---
-port_profiles:
-  - profile: int_trunk_host
-    mode: trunk
-    vlans: "20,2300,2301"
-  - profile: int_access_host
-    mode: access
-    vlans: "2300"
+# port_profiles:
+#   - profile: int_trunk_host
+#     mode: trunk
+#     vlans: "20,2300,2301"
+#   - profile: int_access_host
+#     mode: access
+#     vlans: "2300"
 
 
-network_ports:
-  - switches:
-      - s1-leaf[1]
-    switch_ports: # Ex Ethernet1-48 or Ethernet2-3/1-48
-      - Ethernet4
-    description: Leaf1_Trunk_eth4
-    profile: int_trunk_host
-  - switches:
-      - s1-leaf[2]
-    switch_ports: # Ex Ethernet1-48 or Ethernet2-3/1-48
-      - Ethernet4
-    description: Leaf2_Access_eth4
-    profile: int_access_host
+# network_ports:
+#   - switches:
+#       - s1-leaf[1]
+#     switch_ports: # Ex Ethernet1-48 or Ethernet2-3/1-48
+#       - Ethernet4
+#     description: Leaf1_Trunk_eth4
+#     profile: int_trunk_host
+#   - switches:
+#       - s1-leaf[2]
+#     switch_ports: # Ex Ethernet1-48 or Ethernet2-3/1-48
+#       - Ethernet4
+#     description: Leaf2_Access_eth4
+#     profile: int_access_host
 
 
 

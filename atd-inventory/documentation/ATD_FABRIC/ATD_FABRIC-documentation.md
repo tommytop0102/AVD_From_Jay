@@ -13,7 +13,6 @@
   - [VTEP Loopback VXLAN Tunnel Source Interfaces (VTEPs Only)](#vtep-loopback-vxlan-tunnel-source-interfaces-vteps-only)
   - [VTEP Loopback Node allocation](#vtep-loopback-node-allocation)
 - [Connected Endpoints](#connected-endpoints)
-  - [Port Profiles](#port-profiles)
 
 ## Fabric Switches and Management IP
 
@@ -91,7 +90,7 @@
 ### VTEP Loopback VXLAN Tunnel Source Interfaces (VTEPs Only)
 
 | VTEP Loopback Pool | Available Addresses | Assigned addresses | Assigned Address % |
-| ------------------ | ------------------- | ------------------ | ------------------ |
+| --------------------- | ------------------- | ------------------ | ------------------ |
 | 192.168.236.0/24 | 256 | 4 | 1.57 % |
 
 ### VTEP Loopback Node allocation
@@ -106,10 +105,3 @@
 ## Connected Endpoints
 
 No connected endpoint configured!
-
-### Port Profiles
-
-| Profile Name | Parent Profile |
-| ------------ | -------------- |
-| int_access_host | - |
-| int_trunk_host | - |
