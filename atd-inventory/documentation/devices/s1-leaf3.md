@@ -6,7 +6,10 @@
   - [Management Interfaces](#management-interfaces)
   - [DNS Domain](#dns-domain)
   - [IP Name Servers](#ip-name-servers)
+  - [NTP](#ntp)
   - [Management API HTTP](#management-api-http)
+- [Authentication](#authentication)
+  - [Local Users](#local-users)
 - [MLAG](#mlag)
   - [MLAG Summary](#mlag-summary)
   - [MLAG Device Configuration](#mlag-device-configuration)
@@ -76,12 +79,12 @@ interface Management0
 
 ### DNS Domain
 
-DNS domain: atd.lab
+DNS domain: tsmc.com.tw
 
 #### DNS Domain Device Configuration
 
 ```eos
-dns domain atd.lab
+dns domain tsmc.com.tw
 !
 ```
 
@@ -99,6 +102,23 @@ dns domain atd.lab
 ```eos
 ip name-server vrf default 8.8.8.8
 ip name-server vrf default 192.168.2.1
+```
+
+### NTP
+
+#### NTP Summary
+
+##### NTP Servers
+
+| Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
+| ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
+| time.google.com | default | True | - | True | - | - | - | - | - |
+
+#### NTP Device Configuration
+
+```eos
+!
+ntp server time.google.com prefer iburst
 ```
 
 ### Management API HTTP
@@ -125,6 +145,23 @@ management api http-commands
    !
    vrf default
       no shutdown
+```
+
+## Authentication
+
+### Local Users
+
+#### Local Users Summary
+
+| User | Privilege | Role | Disabled | Shell |
+| ---- | --------- | ---- | -------- | ----- |
+| test-admin | 15 | network-admin | False | - |
+
+#### Local Users Device Configuration
+
+```eos
+!
+username test-admin privilege 15 role network-admin secret sha512 <removed>
 ```
 
 ## MLAG
@@ -250,7 +287,7 @@ vlan 4094
 | --------- | ----------- | -----| ------------- | ---------- | ----| ---- | -------- | ------ | ------- |
 | Ethernet2 | P2P_LINK_TO_S1-SPINE1_Ethernet4 | routed | - | 192.168.51.9/31 | default | 1500 | False | - | - |
 | Ethernet3 | P2P_LINK_TO_S1-SPINE2_Ethernet4 | routed | - | 192.168.51.11/31 | default | 1500 | False | - | - |
-| Ethernet4 | Routed_Interface_1 | routed | - | 10.192.195.21/24 | bluevrf | 9000 | False | - | - |
+| Ethernet4 | Routed_Interface_4 | routed | - | 10.192.195.21/24 | bluevrf | 9000 | False | - | - |
 
 #### Ethernet Interfaces Device Configuration
 
@@ -276,7 +313,7 @@ interface Ethernet3
    ip address 192.168.51.11/31
 !
 interface Ethernet4
-   description Routed_Interface_1
+   description Routed_Interface_4
    no shutdown
    mtu 9000
    no switchport

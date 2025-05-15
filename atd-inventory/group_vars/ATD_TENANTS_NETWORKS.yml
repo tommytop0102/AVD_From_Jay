@@ -25,10 +25,10 @@ tenants:
     #   underlay_l2_multicast_group_ipv4_pool_offset: 2
     vrfs:
       - name: bluevrf
-        vrf_vni: 100
+        vrf_vni: 100 # will be add 2999 in vlan interface ex 100+2999
         vtep_diagnostic:
           loopback: 100
-          loopback_ip_range: 10.255.1.0/24
+          loopback_ip_range: 10.255.1.0/24 # define loopback and NAT IP in vrf level,eazy to troubleshooting in vrf level
         svis:
           - id: 2300
             name: bluenet1

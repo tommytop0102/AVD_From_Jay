@@ -134,6 +134,11 @@ spanning_tree:
   - id: '0'
     priority: 16384
   no_spanning_tree_vlan: 4093-4094
+local_users:
+- name: test-admin
+  privilege: 15
+  role: network-admin
+  sha512_password: $6$7GTxsrRjnwheeKfR$zhJ8qycVjAJz41rf5JRSfWIzp93IL5WL7sMS/Taz1yfShz.MAnoajCf7R2n1/EZW7PN5QA3Huayl0lVQesBYN1
 vrfs:
 - name: default
   ip_routing: false
@@ -263,7 +268,7 @@ ethernet_interfaces:
   vrf: bluevrf
   type: routed
   mtu: 9000
-  description: Routed_Interface_1
+  description: Routed_Interface_4
 mlag_configuration:
   domain_id: pod2
   local_interface: Vlan4094

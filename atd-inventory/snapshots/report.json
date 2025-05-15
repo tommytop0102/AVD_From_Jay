@@ -1,0 +1,3786 @@
+{
+    "devices": {
+        "s1-leaf1": {
+            "show_lldp_neighbors":
+                {
+                "lldpNeighbors": [
+                    {
+                        "neighborDevice": "s1-leaf2.tsmc.com.tw",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet1",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine1.tsmc.com.tw",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet2",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine2.tsmc.com.tw",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet3",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-host1.atd.lab",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet4",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf2.tsmc.com.tw",
+                        "neighborPort": "Ethernet6",
+                        "port": "Ethernet6",
+                        "ttl": 120
+                    }
+                ],
+                "tablesAgeOuts": 0,
+                "tablesDeletes": 0,
+                "tablesDrops": 0,
+                "tablesInserts": 5,
+                "tablesLastChangeTime": 1747296746.3313854
+            },
+            "show_ip_interface_brief":
+                {
+                "interfaces": {
+                    "Ethernet2": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.1",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet2",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet3": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.3",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet3",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.246.3",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback1": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.236.3",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback1",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback100": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.1.3",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback100",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Management0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.0.12",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Management0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan1199": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "0.0.0.0",
+                                "maskLen": 0
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 9164,
+                        "name": "Vlan1199",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2300": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.11.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2300",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2301": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.12.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2301",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan3099": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.0",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan3099",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4093": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.0",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4093",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4094": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.252.0",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4094",
+                        "nonRoutableClassEIntf": false
+                    }
+                }
+            },
+            "show_interfaces_description":
+                {
+                "interfaceDescriptions": {
+                    "Ethernet1": {
+                        "description": "MLAG_PEER_s1-leaf2_Ethernet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet2": {
+                        "description": "P2P_LINK_TO_S1-SPINE1_Ethernet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet3": {
+                        "description": "P2P_LINK_TO_S1-SPINE2_Ethernet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet4": {
+                        "description": "Leaf1_Trunk_eth4",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet6": {
+                        "description": "MLAG_PEER_s1-leaf2_Ethernet6",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback0": {
+                        "description": "EVPN_Overlay_Peering",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback1": {
+                        "description": "VTEP_VXLAN_Tunnel_Source",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback100": {
+                        "description": "bluevrf_VTEP_DIAGNOSTICS",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Management0": {
+                        "description": "oob_management",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Port-Channel1": {
+                        "description": "MLAG_PEER_s1-leaf2_Po1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan1199": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2300": {
+                        "description": "bluenet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2301": {
+                        "description": "bluenet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan3099": {
+                        "description": "MLAG_PEER_L3_iBGP: vrf bluevrf",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4093": {
+                        "description": "MLAG_PEER_L3_PEERING",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4094": {
+                        "description": "MLAG_PEER",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vxlan1": {
+                        "description": "s1-leaf1_VTEP",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    }
+                }
+            },
+            "show_version":
+                {
+                "architecture": "i686",
+                "bootupTimestamp": 1747294976.3137696,
+                "configMacAddress": "00:00:00:00:00:00",
+                "hardwareRevision": "",
+                "hwMacAddress": "00:00:00:00:00:00",
+                "imageFormatVersion": "1.0",
+                "imageOptimization": "None",
+                "internalBuildId": "7a617a29-3c49-4a05-bc51-0bd347da9799",
+                "internalVersion": "4.32.1F-37313256.4321F",
+                "isIntlVersion": false,
+                "kernelVersion": "5.14.0-503.21.1.el9_5.x86_64",
+                "memFree": 2408808,
+                "memTotal": 49062216,
+                "mfgName": "Arista",
+                "modelName": "cEOSLab",
+                "serialNumber": "s1-leaf1",
+                "systemMacAddress": "00:1c:73:c0:c6:12",
+                "uptime": 1866.175899028778,
+                "version": "4.32.1F-37313256.4321F (engineering build)"
+            },
+            "show_running-config":
+                {
+                "cmds": {
+                    "aaa authentication login default group atds local": null,
+                    "aaa authorization commands all default local": null,
+                    "aaa authorization exec default group atds local": null,
+                    "aaa group server radius atds": {
+                        "cmds": {
+                            "server 192.168.0.1": null
+                        },
+                        "comments": []
+                    },
+                    "daemon TerminAttr": {
+                        "cmds": {
+                            "exec /usr/bin/TerminAttr -cvcompression=gzip -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=default -taillogs -disableaaa": null,
+                            "no shutdown": null
+                        },
+                        "comments": []
+                    },
+                    "dns domain tsmc.com.tw": null,
+                    "hostname s1-leaf1": null,
+                    "interface Ethernet1": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf2_Ethernet1": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet2": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE1_Ethernet2": null,
+                            "ip address 192.168.51.1/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet3": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE2_Ethernet2": null,
+                            "ip address 192.168.51.3/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet4": {
+                        "cmds": {
+                            "description Leaf1_Trunk_eth4": null,
+                            "switchport mode trunk": null,
+                            "switchport trunk allowed vlan 20,2300-2301": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet6": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf2_Ethernet6": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback0": {
+                        "cmds": {
+                            "description EVPN_Overlay_Peering": null,
+                            "ip address 192.168.246.3/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback1": {
+                        "cmds": {
+                            "description VTEP_VXLAN_Tunnel_Source": null,
+                            "ip address 192.168.236.3/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback100": {
+                        "cmds": {
+                            "description bluevrf_VTEP_DIAGNOSTICS": null,
+                            "ip address 10.255.1.3/32": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Management0": {
+                        "cmds": {
+                            "description OOB_MANAGEMENT": null,
+                            "description oob_management": null,
+                            "ip address 192.168.0.12/24": null
+                        },
+                        "comments": []
+                    },
+                    "interface Port-Channel1": {
+                        "cmds": {
+                            "description MLAG_PEER_s1-leaf2_Po1": null,
+                            "switchport mode trunk": null,
+                            "switchport trunk group LEAF_PEER_L3": null,
+                            "switchport trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2300": {
+                        "cmds": {
+                            "description bluenet1": null,
+                            "ip address virtual 192.168.11.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2301": {
+                        "cmds": {
+                            "description bluenet2": null,
+                            "ip address virtual 192.168.12.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan3099": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_iBGP: vrf bluevrf": null,
+                            "ip address 10.255.251.0/31": null,
+                            "mtu 1500": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4093": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_PEERING": null,
+                            "ip address 10.255.251.0/31": null,
+                            "mtu 1500": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4094": {
+                        "cmds": {
+                            "description MLAG_PEER": null,
+                            "ip address 10.255.252.0/31": null,
+                            "mtu 1500": null,
+                            "no autostate": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vxlan1": {
+                        "cmds": {
+                            "description s1-leaf1_VTEP": null,
+                            "vxlan source-interface Loopback1": null,
+                            "vxlan udp-port 4789": null,
+                            "vxlan virtual-router encapsulation mac-address mlag-system-id": null,
+                            "vxlan vlan 20 vni 30002": null,
+                            "vxlan vlan 2300 vni 32300": null,
+                            "vxlan vlan 2301 vni 32301": null,
+                            "vxlan vrf bluevrf vni 100": null
+                        },
+                        "comments": []
+                    },
+                    "ip address virtual source-nat vrf bluevrf address 10.255.1.3": null,
+                    "ip name-server vrf default 192.168.2.1": null,
+                    "ip name-server vrf default 8.8.8.8": null,
+                    "ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY": {
+                        "cmds": {
+                            "seq 10 permit 192.168.246.0/24 eq 32": null,
+                            "seq 20 permit 192.168.236.0/24 eq 32": null
+                        },
+                        "comments": []
+                    },
+                    "ip radius source-interface Management0": null,
+                    "ip route 0.0.0.0/0 192.168.0.1": null,
+                    "ip routing": null,
+                    "ip routing vrf bluevrf": null,
+                    "ip virtual-router mac-address 02:04:02:04:02:04": null,
+                    "management api http-commands": {
+                        "cmds": {
+                            "no shutdown": null,
+                            "vrf default": {
+                                "cmds": {
+                                    "no shutdown": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "mlag configuration": {
+                        "cmds": {
+                            "domain-id pod1": null,
+                            "local-interface Vlan4094": null,
+                            "peer-address 10.255.252.1": null,
+                            "peer-link Port-Channel1": null,
+                            "reload-delay mlag 300": null,
+                            "reload-delay non-mlag 330": null
+                        },
+                        "comments": []
+                    },
+                    "no aaa root": null,
+                    "no spanning-tree vlan-id 4093-4094": null,
+                    "ntp server 192.168.0.1 iburst source Management0": null,
+                    "ntp server time.google.com prefer iburst": null,
+                    "radius-server host 192.168.0.1 key 7 0207165218120E": null,
+                    "route-map RM-CONN-2-BGP permit 10": {
+                        "cmds": {
+                            "match ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY": null
+                        },
+                        "comments": []
+                    },
+                    "route-map RM-MLAG-PEER-IN permit 10": {
+                        "cmds": {
+                            "description Make routes learned over MLAG Peer-link less preferred on spines to ensure optimal routing": null,
+                            "set origin incomplete": null
+                        },
+                        "comments": []
+                    },
+                    "router bfd": {
+                        "cmds": {
+                            "multihop interval 1200 min-rx 1200 multiplier 3": null
+                        },
+                        "comments": []
+                    },
+                    "router bgp 65101": {
+                        "cmds": {
+                            "address-family evpn": {
+                                "cmds": {
+                                    "neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "address-family ipv4": {
+                                "cmds": {
+                                    "neighbor IPv4-UNDERLAY-PEERS activate": null,
+                                    "neighbor MLAG-IPv4-UNDERLAY-PEER activate": null,
+                                    "no neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "distance bgp 20 200 200": null,
+                            "graceful-restart": null,
+                            "graceful-restart restart-time 300": null,
+                            "maximum-paths 4 ecmp 4": null,
+                            "neighbor 10.255.251.1 description s1-leaf2": null,
+                            "neighbor 10.255.251.1 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                            "neighbor 192.168.246.1 description s1-spine1": null,
+                            "neighbor 192.168.246.1 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.1 remote-as 64999": null,
+                            "neighbor 192.168.246.2 description s1-spine2": null,
+                            "neighbor 192.168.246.2 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.2 remote-as 64999": null,
+                            "neighbor 192.168.51.0 description s1-spine1_Ethernet2": null,
+                            "neighbor 192.168.51.0 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.0 remote-as 64999": null,
+                            "neighbor 192.168.51.2 description s1-spine2_Ethernet2": null,
+                            "neighbor 192.168.51.2 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.2 remote-as 64999": null,
+                            "neighbor EVPN-OVERLAY-PEERS bfd": null,
+                            "neighbor EVPN-OVERLAY-PEERS ebgp-multihop 3": null,
+                            "neighbor EVPN-OVERLAY-PEERS maximum-routes 0": null,
+                            "neighbor EVPN-OVERLAY-PEERS peer group": null,
+                            "neighbor EVPN-OVERLAY-PEERS send-community": null,
+                            "neighbor EVPN-OVERLAY-PEERS update-source Loopback0": null,
+                            "neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000": null,
+                            "neighbor IPv4-UNDERLAY-PEERS peer group": null,
+                            "neighbor IPv4-UNDERLAY-PEERS send-community": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER description s1-leaf2": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER maximum-routes 12000": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER next-hop-self": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER peer group": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER remote-as 65101": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER route-map RM-MLAG-PEER-IN in": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER send-community": null,
+                            "no bgp default ipv4-unicast": null,
+                            "redistribute connected route-map RM-CONN-2-BGP": null,
+                            "router-id 192.168.246.3": null,
+                            "vlan-aware-bundle ExternalNetwork": {
+                                "cmds": {
+                                    "rd 192.168.246.3:30002": null,
+                                    "redistribute learned": null,
+                                    "route-target both 30002:30002": null,
+                                    "vlan 20": null
+                                },
+                                "comments": []
+                            },
+                            "vlan-aware-bundle bluevrf": {
+                                "cmds": {
+                                    "rd 192.168.246.3:100": null,
+                                    "redistribute learned": null,
+                                    "route-target both 100:100": null,
+                                    "vlan 2300-2301": null
+                                },
+                                "comments": []
+                            },
+                            "vrf bluevrf": {
+                                "cmds": {
+                                    "neighbor 10.255.251.1 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                                    "rd 192.168.246.3:100": null,
+                                    "redistribute connected": null,
+                                    "route-target export evpn 100:100": null,
+                                    "route-target import evpn 100:100": null,
+                                    "router-id 192.168.246.3": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "router multicast": {
+                        "cmds": {
+                            "ipv4": {
+                                "cmds": {
+                                    "routing": null,
+                                    "software-forwarding sfe": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "service routing protocols model multi-agent": null,
+                    "spanning-tree mode mstp": null,
+                    "spanning-tree mst 0 priority 16384": null,
+                    "system l1": {
+                        "cmds": {
+                            "unsupported error-correction action error": null,
+                            "unsupported speed action error": null
+                        },
+                        "comments": []
+                    },
+                    "transceiver qsfp default-mode 4x10G": null,
+                    "username admin privilege 15 role network-admin secret 5 $1$5O85YVVn$HrXcfOivJEnISTMb6xrJc.": null,
+                    "username arista privilege 15 role network-admin secret 5 $1$4VjIjfd1$XkUVulbNDESHFzcxDU.Tk1": null,
+                    "username arista ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjyBFJuXUDRPFV6eLHPBCYZ/YWyonAJxi5H6Hk2yEr50NgOkjt0KGaCnk13lHTc+fUqO2dW2luCSWYey3G2V9I7oTu/OlnJ8upatCJ+U7dfEceUFBAUpPLA89ZOa9OJ8R0wN7l8tD8eGUt52kIn2KKJh4fd8tytgD9oN6QL/WvqjfpC2Ha2ibWq7N71yKMm4akBJ8rvyTAoXFRu0Yp1Shrx461BNYWcs+b7aOyWcyp2xy3u17idBGRh2nsK/N4kVnPGLBZYQ6RcAL9l7MtWPh71ce/IW38IFL0mp/PTz/J8POo2+1ZKcPABbFobi+t397P9C0S/EgY6ppvAOxD+c+3 arista@tsmc-test-2-1-4a9cb9a9-eos": null,
+                    "username test-admin privilege 15 role network-admin secret sha512 $6$7GTxsrRjnwheeKfR$zhJ8qycVjAJz41rf5JRSfWIzp93IL5WL7sMS/Taz1yfShz.MAnoajCf7R2n1/EZW7PN5QA3Huayl0lVQesBYN1": null,
+                    "vlan 20": {
+                        "cmds": {
+                            "name ExternalNetwork": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2300": {
+                        "cmds": {
+                            "name bluenet1": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2301": {
+                        "cmds": {
+                            "name bluenet2": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 3099": {
+                        "cmds": {
+                            "name MLAG_iBGP_bluevrf": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4093": {
+                        "cmds": {
+                            "name LEAF_PEER_L3": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4094": {
+                        "cmds": {
+                            "name MLAG_PEER": null,
+                            "trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "vlan internal order ascending range 1006 1199": null,
+                    "vrf instance bluevrf": {
+                        "cmds": {},
+                        "comments": []
+                    }
+                },
+                "comments": [],
+                "header": [
+                    "! device: s1-leaf1 (cEOSLab, EOS-4.32.1F-37313256.4321F (engineering build))"
+                ]
+            }
+        },
+        "s1-leaf2": {
+            "show_lldp_neighbors":
+                {
+                "lldpNeighbors": [
+                    {
+                        "neighborDevice": "s1-leaf1.tsmc.com.tw",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet1",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine1.tsmc.com.tw",
+                        "neighborPort": "Ethernet3",
+                        "port": "Ethernet2",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine2.tsmc.com.tw",
+                        "neighborPort": "Ethernet3",
+                        "port": "Ethernet3",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-host1.atd.lab",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet4",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf1.tsmc.com.tw",
+                        "neighborPort": "Ethernet6",
+                        "port": "Ethernet6",
+                        "ttl": 120
+                    }
+                ],
+                "tablesAgeOuts": 0,
+                "tablesDeletes": 0,
+                "tablesDrops": 0,
+                "tablesInserts": 5,
+                "tablesLastChangeTime": 1747296746.3305426
+            },
+            "show_ip_interface_brief":
+                {
+                "interfaces": {
+                    "Ethernet2": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.5",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet2",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet3": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.7",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet3",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.246.4",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback1": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.236.3",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback1",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback100": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.1.4",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback100",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Management0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.0.13",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Management0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan1199": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "0.0.0.0",
+                                "maskLen": 0
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 9164,
+                        "name": "Vlan1199",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2300": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.11.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2300",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2301": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.12.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2301",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan3099": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.1",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan3099",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4093": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.1",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4093",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4094": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.252.1",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4094",
+                        "nonRoutableClassEIntf": false
+                    }
+                }
+            },
+            "show_interfaces_description":
+                {
+                "interfaceDescriptions": {
+                    "Ethernet1": {
+                        "description": "MLAG_PEER_s1-leaf1_Ethernet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet2": {
+                        "description": "P2P_LINK_TO_S1-SPINE1_Ethernet3",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet3": {
+                        "description": "P2P_LINK_TO_S1-SPINE2_Ethernet3",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet4": {
+                        "description": "Leaf2_Access_eth4",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet6": {
+                        "description": "MLAG_PEER_s1-leaf1_Ethernet6",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback0": {
+                        "description": "EVPN_Overlay_Peering",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback1": {
+                        "description": "VTEP_VXLAN_Tunnel_Source",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback100": {
+                        "description": "bluevrf_VTEP_DIAGNOSTICS",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Management0": {
+                        "description": "oob_management",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Port-Channel1": {
+                        "description": "MLAG_PEER_s1-leaf1_Po1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan1199": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2300": {
+                        "description": "bluenet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2301": {
+                        "description": "bluenet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan3099": {
+                        "description": "MLAG_PEER_L3_iBGP: vrf bluevrf",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4093": {
+                        "description": "MLAG_PEER_L3_PEERING",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4094": {
+                        "description": "MLAG_PEER",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vxlan1": {
+                        "description": "s1-leaf2_VTEP",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    }
+                }
+            },
+            "show_version":
+                {
+                "architecture": "i686",
+                "bootupTimestamp": 1747294978.5449972,
+                "configMacAddress": "00:00:00:00:00:00",
+                "hardwareRevision": "",
+                "hwMacAddress": "00:00:00:00:00:00",
+                "imageFormatVersion": "1.0",
+                "imageOptimization": "None",
+                "internalBuildId": "7a617a29-3c49-4a05-bc51-0bd347da9799",
+                "internalVersion": "4.32.1F-37313256.4321F",
+                "isIntlVersion": false,
+                "kernelVersion": "5.14.0-503.21.1.el9_5.x86_64",
+                "memFree": 2361264,
+                "memTotal": 49062216,
+                "mfgName": "Arista",
+                "modelName": "cEOSLab",
+                "serialNumber": "s1-leaf2",
+                "systemMacAddress": "00:1c:73:c0:c6:13",
+                "uptime": 1865.7282919883728,
+                "version": "4.32.1F-37313256.4321F (engineering build)"
+            },
+            "show_running-config":
+                {
+                "cmds": {
+                    "aaa authentication login default group atds local": null,
+                    "aaa authorization commands all default local": null,
+                    "aaa authorization exec default group atds local": null,
+                    "aaa group server radius atds": {
+                        "cmds": {
+                            "server 192.168.0.1": null
+                        },
+                        "comments": []
+                    },
+                    "daemon TerminAttr": {
+                        "cmds": {
+                            "exec /usr/bin/TerminAttr -cvcompression=gzip -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=default -taillogs -disableaaa": null,
+                            "no shutdown": null
+                        },
+                        "comments": []
+                    },
+                    "dns domain tsmc.com.tw": null,
+                    "hostname s1-leaf2": null,
+                    "interface Ethernet1": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf1_Ethernet1": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet2": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE1_Ethernet3": null,
+                            "ip address 192.168.51.5/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet3": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE2_Ethernet3": null,
+                            "ip address 192.168.51.7/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet4": {
+                        "cmds": {
+                            "description Leaf2_Access_eth4": null,
+                            "switchport access vlan 2300": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet6": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf1_Ethernet6": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback0": {
+                        "cmds": {
+                            "description EVPN_Overlay_Peering": null,
+                            "ip address 192.168.246.4/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback1": {
+                        "cmds": {
+                            "description VTEP_VXLAN_Tunnel_Source": null,
+                            "ip address 192.168.236.3/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback100": {
+                        "cmds": {
+                            "description bluevrf_VTEP_DIAGNOSTICS": null,
+                            "ip address 10.255.1.4/32": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Management0": {
+                        "cmds": {
+                            "description OOB_MANAGEMENT": null,
+                            "description oob_management": null,
+                            "ip address 192.168.0.13/24": null
+                        },
+                        "comments": []
+                    },
+                    "interface Port-Channel1": {
+                        "cmds": {
+                            "description MLAG_PEER_s1-leaf1_Po1": null,
+                            "switchport mode trunk": null,
+                            "switchport trunk group LEAF_PEER_L3": null,
+                            "switchport trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2300": {
+                        "cmds": {
+                            "description bluenet1": null,
+                            "ip address virtual 192.168.11.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2301": {
+                        "cmds": {
+                            "description bluenet2": null,
+                            "ip address virtual 192.168.12.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan3099": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_iBGP: vrf bluevrf": null,
+                            "ip address 10.255.251.1/31": null,
+                            "mtu 1500": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4093": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_PEERING": null,
+                            "ip address 10.255.251.1/31": null,
+                            "mtu 1500": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4094": {
+                        "cmds": {
+                            "description MLAG_PEER": null,
+                            "ip address 10.255.252.1/31": null,
+                            "mtu 1500": null,
+                            "no autostate": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vxlan1": {
+                        "cmds": {
+                            "description s1-leaf2_VTEP": null,
+                            "vxlan source-interface Loopback1": null,
+                            "vxlan udp-port 4789": null,
+                            "vxlan virtual-router encapsulation mac-address mlag-system-id": null,
+                            "vxlan vlan 20 vni 30002": null,
+                            "vxlan vlan 2300 vni 32300": null,
+                            "vxlan vlan 2301 vni 32301": null,
+                            "vxlan vrf bluevrf vni 100": null
+                        },
+                        "comments": []
+                    },
+                    "ip address virtual source-nat vrf bluevrf address 10.255.1.4": null,
+                    "ip name-server vrf default 192.168.2.1": null,
+                    "ip name-server vrf default 8.8.8.8": null,
+                    "ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY": {
+                        "cmds": {
+                            "seq 10 permit 192.168.246.0/24 eq 32": null,
+                            "seq 20 permit 192.168.236.0/24 eq 32": null
+                        },
+                        "comments": []
+                    },
+                    "ip radius source-interface Management0": null,
+                    "ip route 0.0.0.0/0 192.168.0.1": null,
+                    "ip routing": null,
+                    "ip routing vrf bluevrf": null,
+                    "ip virtual-router mac-address 02:04:02:04:02:04": null,
+                    "management api http-commands": {
+                        "cmds": {
+                            "no shutdown": null,
+                            "vrf default": {
+                                "cmds": {
+                                    "no shutdown": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "mlag configuration": {
+                        "cmds": {
+                            "domain-id pod1": null,
+                            "local-interface Vlan4094": null,
+                            "peer-address 10.255.252.0": null,
+                            "peer-link Port-Channel1": null,
+                            "reload-delay mlag 300": null,
+                            "reload-delay non-mlag 330": null
+                        },
+                        "comments": []
+                    },
+                    "no aaa root": null,
+                    "no spanning-tree vlan-id 4093-4094": null,
+                    "ntp server 192.168.0.1 iburst source Management0": null,
+                    "ntp server time.google.com prefer iburst": null,
+                    "radius-server host 192.168.0.1 key 7 0207165218120E": null,
+                    "route-map RM-CONN-2-BGP permit 10": {
+                        "cmds": {
+                            "match ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY": null
+                        },
+                        "comments": []
+                    },
+                    "route-map RM-MLAG-PEER-IN permit 10": {
+                        "cmds": {
+                            "description Make routes learned over MLAG Peer-link less preferred on spines to ensure optimal routing": null,
+                            "set origin incomplete": null
+                        },
+                        "comments": []
+                    },
+                    "router bfd": {
+                        "cmds": {
+                            "multihop interval 1200 min-rx 1200 multiplier 3": null
+                        },
+                        "comments": []
+                    },
+                    "router bgp 65101": {
+                        "cmds": {
+                            "address-family evpn": {
+                                "cmds": {
+                                    "neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "address-family ipv4": {
+                                "cmds": {
+                                    "neighbor IPv4-UNDERLAY-PEERS activate": null,
+                                    "neighbor MLAG-IPv4-UNDERLAY-PEER activate": null,
+                                    "no neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "distance bgp 20 200 200": null,
+                            "graceful-restart": null,
+                            "graceful-restart restart-time 300": null,
+                            "maximum-paths 4 ecmp 4": null,
+                            "neighbor 10.255.251.0 description s1-leaf1": null,
+                            "neighbor 10.255.251.0 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                            "neighbor 192.168.246.1 description s1-spine1": null,
+                            "neighbor 192.168.246.1 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.1 remote-as 64999": null,
+                            "neighbor 192.168.246.2 description s1-spine2": null,
+                            "neighbor 192.168.246.2 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.2 remote-as 64999": null,
+                            "neighbor 192.168.51.4 description s1-spine1_Ethernet3": null,
+                            "neighbor 192.168.51.4 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.4 remote-as 64999": null,
+                            "neighbor 192.168.51.6 description s1-spine2_Ethernet3": null,
+                            "neighbor 192.168.51.6 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.6 remote-as 64999": null,
+                            "neighbor EVPN-OVERLAY-PEERS bfd": null,
+                            "neighbor EVPN-OVERLAY-PEERS ebgp-multihop 3": null,
+                            "neighbor EVPN-OVERLAY-PEERS maximum-routes 0": null,
+                            "neighbor EVPN-OVERLAY-PEERS peer group": null,
+                            "neighbor EVPN-OVERLAY-PEERS send-community": null,
+                            "neighbor EVPN-OVERLAY-PEERS update-source Loopback0": null,
+                            "neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000": null,
+                            "neighbor IPv4-UNDERLAY-PEERS peer group": null,
+                            "neighbor IPv4-UNDERLAY-PEERS send-community": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER description s1-leaf1": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER maximum-routes 12000": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER next-hop-self": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER peer group": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER remote-as 65101": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER route-map RM-MLAG-PEER-IN in": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER send-community": null,
+                            "no bgp default ipv4-unicast": null,
+                            "redistribute connected route-map RM-CONN-2-BGP": null,
+                            "router-id 192.168.246.4": null,
+                            "vlan-aware-bundle ExternalNetwork": {
+                                "cmds": {
+                                    "rd 192.168.246.4:30002": null,
+                                    "redistribute learned": null,
+                                    "route-target both 30002:30002": null,
+                                    "vlan 20": null
+                                },
+                                "comments": []
+                            },
+                            "vlan-aware-bundle bluevrf": {
+                                "cmds": {
+                                    "rd 192.168.246.4:100": null,
+                                    "redistribute learned": null,
+                                    "route-target both 100:100": null,
+                                    "vlan 2300-2301": null
+                                },
+                                "comments": []
+                            },
+                            "vrf bluevrf": {
+                                "cmds": {
+                                    "neighbor 10.255.251.0 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                                    "rd 192.168.246.4:100": null,
+                                    "redistribute connected": null,
+                                    "route-target export evpn 100:100": null,
+                                    "route-target import evpn 100:100": null,
+                                    "router-id 192.168.246.4": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "router multicast": {
+                        "cmds": {
+                            "ipv4": {
+                                "cmds": {
+                                    "routing": null,
+                                    "software-forwarding sfe": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "service routing protocols model multi-agent": null,
+                    "spanning-tree mode mstp": null,
+                    "spanning-tree mst 0 priority 16384": null,
+                    "system l1": {
+                        "cmds": {
+                            "unsupported error-correction action error": null,
+                            "unsupported speed action error": null
+                        },
+                        "comments": []
+                    },
+                    "transceiver qsfp default-mode 4x10G": null,
+                    "username admin privilege 15 role network-admin secret 5 $1$5O85YVVn$HrXcfOivJEnISTMb6xrJc.": null,
+                    "username arista privilege 15 role network-admin secret 5 $1$4VjIjfd1$XkUVulbNDESHFzcxDU.Tk1": null,
+                    "username arista ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjyBFJuXUDRPFV6eLHPBCYZ/YWyonAJxi5H6Hk2yEr50NgOkjt0KGaCnk13lHTc+fUqO2dW2luCSWYey3G2V9I7oTu/OlnJ8upatCJ+U7dfEceUFBAUpPLA89ZOa9OJ8R0wN7l8tD8eGUt52kIn2KKJh4fd8tytgD9oN6QL/WvqjfpC2Ha2ibWq7N71yKMm4akBJ8rvyTAoXFRu0Yp1Shrx461BNYWcs+b7aOyWcyp2xy3u17idBGRh2nsK/N4kVnPGLBZYQ6RcAL9l7MtWPh71ce/IW38IFL0mp/PTz/J8POo2+1ZKcPABbFobi+t397P9C0S/EgY6ppvAOxD+c+3 arista@tsmc-test-2-1-4a9cb9a9-eos": null,
+                    "username test-admin privilege 15 role network-admin secret sha512 $6$7GTxsrRjnwheeKfR$zhJ8qycVjAJz41rf5JRSfWIzp93IL5WL7sMS/Taz1yfShz.MAnoajCf7R2n1/EZW7PN5QA3Huayl0lVQesBYN1": null,
+                    "vlan 20": {
+                        "cmds": {
+                            "name ExternalNetwork": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2300": {
+                        "cmds": {
+                            "name bluenet1": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2301": {
+                        "cmds": {
+                            "name bluenet2": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 3099": {
+                        "cmds": {
+                            "name MLAG_iBGP_bluevrf": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4093": {
+                        "cmds": {
+                            "name LEAF_PEER_L3": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4094": {
+                        "cmds": {
+                            "name MLAG_PEER": null,
+                            "trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "vlan internal order ascending range 1006 1199": null,
+                    "vrf instance bluevrf": {
+                        "cmds": {},
+                        "comments": []
+                    }
+                },
+                "comments": [],
+                "header": [
+                    "! device: s1-leaf2 (cEOSLab, EOS-4.32.1F-37313256.4321F (engineering build))"
+                ]
+            }
+        },
+        "s1-leaf3": {
+            "show_lldp_neighbors":
+                {
+                "lldpNeighbors": [
+                    {
+                        "neighborDevice": "s1-leaf4.tsmc.com.tw",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet1",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine1.tsmc.com.tw",
+                        "neighborPort": "Ethernet4",
+                        "port": "Ethernet2",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine2.tsmc.com.tw",
+                        "neighborPort": "Ethernet4",
+                        "port": "Ethernet3",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-host2.atd.lab",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet4",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf4.tsmc.com.tw",
+                        "neighborPort": "Ethernet6",
+                        "port": "Ethernet6",
+                        "ttl": 120
+                    }
+                ],
+                "tablesAgeOuts": 0,
+                "tablesDeletes": 0,
+                "tablesDrops": 0,
+                "tablesInserts": 5,
+                "tablesLastChangeTime": 1747296746.3056476
+            },
+            "show_ip_interface_brief":
+                {
+                "interfaces": {
+                    "Ethernet2": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.9",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet2",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet3": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.11",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet3",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet4": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.192.195.21",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 9000,
+                        "name": "Ethernet4",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.246.5",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback1": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.236.5",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback1",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback100": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.1.5",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback100",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Management0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.0.14",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Management0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan1199": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "0.0.0.0",
+                                "maskLen": 0
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 9164,
+                        "name": "Vlan1199",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2300": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.11.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2300",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2301": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.12.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2301",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan3099": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.4",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan3099",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4093": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.4",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4093",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4094": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.252.4",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4094",
+                        "nonRoutableClassEIntf": false
+                    }
+                }
+            },
+            "show_interfaces_description":
+                {
+                "interfaceDescriptions": {
+                    "Ethernet1": {
+                        "description": "MLAG_PEER_s1-leaf4_Ethernet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet2": {
+                        "description": "P2P_LINK_TO_S1-SPINE1_Ethernet4",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet3": {
+                        "description": "P2P_LINK_TO_S1-SPINE2_Ethernet4",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet4": {
+                        "description": "Routed_Interface_4",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet6": {
+                        "description": "MLAG_PEER_s1-leaf4_Ethernet6",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback0": {
+                        "description": "EVPN_Overlay_Peering",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback1": {
+                        "description": "VTEP_VXLAN_Tunnel_Source",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback100": {
+                        "description": "bluevrf_VTEP_DIAGNOSTICS",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Management0": {
+                        "description": "oob_management",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Port-Channel1": {
+                        "description": "MLAG_PEER_s1-leaf4_Po1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan1199": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2300": {
+                        "description": "bluenet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2301": {
+                        "description": "bluenet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan3099": {
+                        "description": "MLAG_PEER_L3_iBGP: vrf bluevrf",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4093": {
+                        "description": "MLAG_PEER_L3_PEERING",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4094": {
+                        "description": "MLAG_PEER",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vxlan1": {
+                        "description": "s1-leaf3_VTEP",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    }
+                }
+            },
+            "show_version":
+                {
+                "architecture": "i686",
+                "bootupTimestamp": 1747294980.6062074,
+                "configMacAddress": "00:00:00:00:00:00",
+                "hardwareRevision": "",
+                "hwMacAddress": "00:00:00:00:00:00",
+                "imageFormatVersion": "1.0",
+                "imageOptimization": "None",
+                "internalBuildId": "7a617a29-3c49-4a05-bc51-0bd347da9799",
+                "internalVersion": "4.32.1F-37313256.4321F",
+                "isIntlVersion": false,
+                "kernelVersion": "5.14.0-503.21.1.el9_5.x86_64",
+                "memFree": 2341472,
+                "memTotal": 49062216,
+                "mfgName": "Arista",
+                "modelName": "cEOSLab",
+                "serialNumber": "s1-leaf3",
+                "systemMacAddress": "00:1c:73:c0:c6:14",
+                "uptime": 1861.214708328247,
+                "version": "4.32.1F-37313256.4321F (engineering build)"
+            },
+            "show_running-config":
+                {
+                "cmds": {
+                    "aaa authentication login default group atds local": null,
+                    "aaa authorization commands all default local": null,
+                    "aaa authorization exec default group atds local": null,
+                    "aaa group server radius atds": {
+                        "cmds": {
+                            "server 192.168.0.1": null
+                        },
+                        "comments": []
+                    },
+                    "daemon TerminAttr": {
+                        "cmds": {
+                            "exec /usr/bin/TerminAttr -cvcompression=gzip -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=default -taillogs -disableaaa": null,
+                            "no shutdown": null
+                        },
+                        "comments": []
+                    },
+                    "dns domain tsmc.com.tw": null,
+                    "hostname s1-leaf3": null,
+                    "interface Ethernet1": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf4_Ethernet1": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet2": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE1_Ethernet4": null,
+                            "ip address 192.168.51.9/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet3": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE2_Ethernet4": null,
+                            "ip address 192.168.51.11/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet4": {
+                        "cmds": {
+                            "description Routed_Interface_4": null,
+                            "ip address 10.192.195.21/24": null,
+                            "mtu 9000": null,
+                            "no switchport": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet6": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf4_Ethernet6": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback0": {
+                        "cmds": {
+                            "description EVPN_Overlay_Peering": null,
+                            "ip address 192.168.246.5/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback1": {
+                        "cmds": {
+                            "description VTEP_VXLAN_Tunnel_Source": null,
+                            "ip address 192.168.236.5/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback100": {
+                        "cmds": {
+                            "description bluevrf_VTEP_DIAGNOSTICS": null,
+                            "ip address 10.255.1.5/32": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Management0": {
+                        "cmds": {
+                            "description OOB_MANAGEMENT": null,
+                            "description oob_management": null,
+                            "ip address 192.168.0.14/24": null
+                        },
+                        "comments": []
+                    },
+                    "interface Port-Channel1": {
+                        "cmds": {
+                            "description MLAG_PEER_s1-leaf4_Po1": null,
+                            "switchport mode trunk": null,
+                            "switchport trunk group LEAF_PEER_L3": null,
+                            "switchport trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2300": {
+                        "cmds": {
+                            "description bluenet1": null,
+                            "ip address virtual 192.168.11.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2301": {
+                        "cmds": {
+                            "description bluenet2": null,
+                            "ip address virtual 192.168.12.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan3099": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_iBGP: vrf bluevrf": null,
+                            "ip address 10.255.251.4/31": null,
+                            "mtu 1500": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4093": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_PEERING": null,
+                            "ip address 10.255.251.4/31": null,
+                            "mtu 1500": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4094": {
+                        "cmds": {
+                            "description MLAG_PEER": null,
+                            "ip address 10.255.252.4/31": null,
+                            "mtu 1500": null,
+                            "no autostate": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vxlan1": {
+                        "cmds": {
+                            "description s1-leaf3_VTEP": null,
+                            "vxlan source-interface Loopback1": null,
+                            "vxlan udp-port 4789": null,
+                            "vxlan virtual-router encapsulation mac-address mlag-system-id": null,
+                            "vxlan vlan 20 vni 30002": null,
+                            "vxlan vlan 2300 vni 32300": null,
+                            "vxlan vlan 2301 vni 32301": null,
+                            "vxlan vrf bluevrf vni 100": null
+                        },
+                        "comments": []
+                    },
+                    "ip address virtual source-nat vrf bluevrf address 10.255.1.5": null,
+                    "ip name-server vrf default 192.168.2.1": null,
+                    "ip name-server vrf default 8.8.8.8": null,
+                    "ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY": {
+                        "cmds": {
+                            "seq 10 permit 192.168.246.0/24 eq 32": null,
+                            "seq 20 permit 192.168.236.0/24 eq 32": null
+                        },
+                        "comments": []
+                    },
+                    "ip radius source-interface Management0": null,
+                    "ip route 0.0.0.0/0 192.168.0.1": null,
+                    "ip routing": null,
+                    "ip routing vrf bluevrf": null,
+                    "ip virtual-router mac-address 02:04:02:04:02:04": null,
+                    "management api http-commands": {
+                        "cmds": {
+                            "no shutdown": null,
+                            "vrf default": {
+                                "cmds": {
+                                    "no shutdown": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "mlag configuration": {
+                        "cmds": {
+                            "domain-id pod2": null,
+                            "local-interface Vlan4094": null,
+                            "peer-address 10.255.252.5": null,
+                            "peer-link Port-Channel1": null,
+                            "reload-delay mlag 300": null,
+                            "reload-delay non-mlag 330": null
+                        },
+                        "comments": []
+                    },
+                    "no aaa root": null,
+                    "no spanning-tree vlan-id 4093-4094": null,
+                    "ntp server 192.168.0.1 iburst source Management0": null,
+                    "ntp server time.google.com prefer iburst": null,
+                    "radius-server host 192.168.0.1 key 7 0207165218120E": null,
+                    "route-map RM-CONN-2-BGP permit 10": {
+                        "cmds": {
+                            "match ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY": null
+                        },
+                        "comments": []
+                    },
+                    "route-map RM-MLAG-PEER-IN permit 10": {
+                        "cmds": {
+                            "description Make routes learned over MLAG Peer-link less preferred on spines to ensure optimal routing": null,
+                            "set origin incomplete": null
+                        },
+                        "comments": []
+                    },
+                    "router bfd": {
+                        "cmds": {
+                            "multihop interval 1200 min-rx 1200 multiplier 3": null
+                        },
+                        "comments": []
+                    },
+                    "router bgp 65102": {
+                        "cmds": {
+                            "address-family evpn": {
+                                "cmds": {
+                                    "neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "address-family ipv4": {
+                                "cmds": {
+                                    "neighbor IPv4-UNDERLAY-PEERS activate": null,
+                                    "neighbor MLAG-IPv4-UNDERLAY-PEER activate": null,
+                                    "no neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "distance bgp 20 200 200": null,
+                            "graceful-restart": null,
+                            "graceful-restart restart-time 300": null,
+                            "maximum-paths 4 ecmp 4": null,
+                            "neighbor 10.255.251.5 description s1-leaf4": null,
+                            "neighbor 10.255.251.5 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                            "neighbor 192.168.246.1 description s1-spine1": null,
+                            "neighbor 192.168.246.1 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.1 remote-as 64999": null,
+                            "neighbor 192.168.246.2 description s1-spine2": null,
+                            "neighbor 192.168.246.2 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.2 remote-as 64999": null,
+                            "neighbor 192.168.51.10 description s1-spine2_Ethernet4": null,
+                            "neighbor 192.168.51.10 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.10 remote-as 64999": null,
+                            "neighbor 192.168.51.8 description s1-spine1_Ethernet4": null,
+                            "neighbor 192.168.51.8 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.8 remote-as 64999": null,
+                            "neighbor EVPN-OVERLAY-PEERS bfd": null,
+                            "neighbor EVPN-OVERLAY-PEERS ebgp-multihop 3": null,
+                            "neighbor EVPN-OVERLAY-PEERS maximum-routes 0": null,
+                            "neighbor EVPN-OVERLAY-PEERS peer group": null,
+                            "neighbor EVPN-OVERLAY-PEERS send-community": null,
+                            "neighbor EVPN-OVERLAY-PEERS update-source Loopback0": null,
+                            "neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000": null,
+                            "neighbor IPv4-UNDERLAY-PEERS peer group": null,
+                            "neighbor IPv4-UNDERLAY-PEERS send-community": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER description s1-leaf4": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER maximum-routes 12000": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER next-hop-self": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER peer group": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER remote-as 65102": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER route-map RM-MLAG-PEER-IN in": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER send-community": null,
+                            "no bgp default ipv4-unicast": null,
+                            "redistribute connected route-map RM-CONN-2-BGP": null,
+                            "router-id 192.168.246.5": null,
+                            "vlan-aware-bundle ExternalNetwork": {
+                                "cmds": {
+                                    "rd 192.168.246.5:30002": null,
+                                    "redistribute learned": null,
+                                    "route-target both 30002:30002": null,
+                                    "vlan 20": null
+                                },
+                                "comments": []
+                            },
+                            "vlan-aware-bundle bluevrf": {
+                                "cmds": {
+                                    "rd 192.168.246.5:100": null,
+                                    "redistribute learned": null,
+                                    "route-target both 100:100": null,
+                                    "vlan 2300-2301": null
+                                },
+                                "comments": []
+                            },
+                            "vrf bluevrf": {
+                                "cmds": {
+                                    "neighbor 10.255.251.5 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                                    "rd 192.168.246.5:100": null,
+                                    "redistribute connected": null,
+                                    "route-target export evpn 100:100": null,
+                                    "route-target import evpn 100:100": null,
+                                    "router-id 192.168.246.5": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "router multicast": {
+                        "cmds": {
+                            "ipv4": {
+                                "cmds": {
+                                    "routing": null,
+                                    "software-forwarding sfe": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "service routing protocols model multi-agent": null,
+                    "spanning-tree mode mstp": null,
+                    "spanning-tree mst 0 priority 16384": null,
+                    "system l1": {
+                        "cmds": {
+                            "unsupported error-correction action error": null,
+                            "unsupported speed action error": null
+                        },
+                        "comments": []
+                    },
+                    "transceiver qsfp default-mode 4x10G": null,
+                    "username admin privilege 15 role network-admin secret 5 $1$5O85YVVn$HrXcfOivJEnISTMb6xrJc.": null,
+                    "username arista privilege 15 role network-admin secret 5 $1$4VjIjfd1$XkUVulbNDESHFzcxDU.Tk1": null,
+                    "username arista ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjyBFJuXUDRPFV6eLHPBCYZ/YWyonAJxi5H6Hk2yEr50NgOkjt0KGaCnk13lHTc+fUqO2dW2luCSWYey3G2V9I7oTu/OlnJ8upatCJ+U7dfEceUFBAUpPLA89ZOa9OJ8R0wN7l8tD8eGUt52kIn2KKJh4fd8tytgD9oN6QL/WvqjfpC2Ha2ibWq7N71yKMm4akBJ8rvyTAoXFRu0Yp1Shrx461BNYWcs+b7aOyWcyp2xy3u17idBGRh2nsK/N4kVnPGLBZYQ6RcAL9l7MtWPh71ce/IW38IFL0mp/PTz/J8POo2+1ZKcPABbFobi+t397P9C0S/EgY6ppvAOxD+c+3 arista@tsmc-test-2-1-4a9cb9a9-eos": null,
+                    "username test-admin privilege 15 role network-admin secret sha512 $6$7GTxsrRjnwheeKfR$zhJ8qycVjAJz41rf5JRSfWIzp93IL5WL7sMS/Taz1yfShz.MAnoajCf7R2n1/EZW7PN5QA3Huayl0lVQesBYN1": null,
+                    "vlan 20": {
+                        "cmds": {
+                            "name ExternalNetwork": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2300": {
+                        "cmds": {
+                            "name bluenet1": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2301": {
+                        "cmds": {
+                            "name bluenet2": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 3099": {
+                        "cmds": {
+                            "name MLAG_iBGP_bluevrf": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4093": {
+                        "cmds": {
+                            "name LEAF_PEER_L3": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4094": {
+                        "cmds": {
+                            "name MLAG_PEER": null,
+                            "trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "vlan internal order ascending range 1006 1199": null,
+                    "vrf instance bluevrf": {
+                        "cmds": {},
+                        "comments": []
+                    }
+                },
+                "comments": [],
+                "header": [
+                    "! device: s1-leaf3 (cEOSLab, EOS-4.32.1F-37313256.4321F (engineering build))"
+                ]
+            }
+        },
+        "s1-leaf4": {
+            "show_lldp_neighbors":
+                {
+                "lldpNeighbors": [
+                    {
+                        "neighborDevice": "s1-leaf3.tsmc.com.tw",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet1",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine1.tsmc.com.tw",
+                        "neighborPort": "Ethernet5",
+                        "port": "Ethernet2",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine2.tsmc.com.tw",
+                        "neighborPort": "Ethernet5",
+                        "port": "Ethernet3",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-host2.atd.lab",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet4",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf3.tsmc.com.tw",
+                        "neighborPort": "Ethernet6",
+                        "port": "Ethernet6",
+                        "ttl": 120
+                    }
+                ],
+                "tablesAgeOuts": 0,
+                "tablesDeletes": 0,
+                "tablesDrops": 0,
+                "tablesInserts": 5,
+                "tablesLastChangeTime": 1747296746.3034067
+            },
+            "show_ip_interface_brief":
+                {
+                "interfaces": {
+                    "Ethernet2": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.13",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet2",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet3": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.15",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet3",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet4": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.192.192.21",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 9214,
+                        "name": "Ethernet4",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.246.6",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback1": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.236.5",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback1",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback100": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.1.6",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback100",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Management0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.0.15",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Management0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan1199": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "0.0.0.0",
+                                "maskLen": 0
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 9164,
+                        "name": "Vlan1199",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2300": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.11.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2300",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan2301": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.12.1",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan2301",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan3099": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.5",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan3099",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4093": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.251.5",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4093",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Vlan4094": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "10.255.252.5",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Vlan4094",
+                        "nonRoutableClassEIntf": false
+                    }
+                }
+            },
+            "show_interfaces_description":
+                {
+                "interfaceDescriptions": {
+                    "Ethernet1": {
+                        "description": "MLAG_PEER_s1-leaf3_Ethernet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet2": {
+                        "description": "P2P_LINK_TO_S1-SPINE1_Ethernet5",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet3": {
+                        "description": "P2P_LINK_TO_S1-SPINE2_Ethernet5",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet4": {
+                        "description": "Routed_Interface_2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet6": {
+                        "description": "MLAG_PEER_s1-leaf3_Ethernet6",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback0": {
+                        "description": "EVPN_Overlay_Peering",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback1": {
+                        "description": "VTEP_VXLAN_Tunnel_Source",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Loopback100": {
+                        "description": "bluevrf_VTEP_DIAGNOSTICS",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Management0": {
+                        "description": "oob_management",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Port-Channel1": {
+                        "description": "MLAG_PEER_s1-leaf3_Po1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan1199": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2300": {
+                        "description": "bluenet1",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan2301": {
+                        "description": "bluenet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan3099": {
+                        "description": "MLAG_PEER_L3_iBGP: vrf bluevrf",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4093": {
+                        "description": "MLAG_PEER_L3_PEERING",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vlan4094": {
+                        "description": "MLAG_PEER",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Vxlan1": {
+                        "description": "s1-leaf4_VTEP",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    }
+                }
+            },
+            "show_version":
+                {
+                "architecture": "i686",
+                "bootupTimestamp": 1747294982.6154122,
+                "configMacAddress": "00:00:00:00:00:00",
+                "hardwareRevision": "",
+                "hwMacAddress": "00:00:00:00:00:00",
+                "imageFormatVersion": "1.0",
+                "imageOptimization": "None",
+                "internalBuildId": "7a617a29-3c49-4a05-bc51-0bd347da9799",
+                "internalVersion": "4.32.1F-37313256.4321F",
+                "isIntlVersion": false,
+                "kernelVersion": "5.14.0-503.21.1.el9_5.x86_64",
+                "memFree": 2379828,
+                "memTotal": 49062216,
+                "mfgName": "Arista",
+                "modelName": "cEOSLab",
+                "serialNumber": "s1-leaf4",
+                "systemMacAddress": "00:1c:73:c0:c6:15",
+                "uptime": 1873.0977668762207,
+                "version": "4.32.1F-37313256.4321F (engineering build)"
+            },
+            "show_running-config":
+                {
+                "cmds": {
+                    "aaa authentication login default group atds local": null,
+                    "aaa authorization commands all default local": null,
+                    "aaa authorization exec default group atds local": null,
+                    "aaa group server radius atds": {
+                        "cmds": {
+                            "server 192.168.0.1": null
+                        },
+                        "comments": []
+                    },
+                    "daemon TerminAttr": {
+                        "cmds": {
+                            "exec /usr/bin/TerminAttr -cvcompression=gzip -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=default -taillogs -disableaaa": null,
+                            "no shutdown": null
+                        },
+                        "comments": []
+                    },
+                    "dns domain tsmc.com.tw": null,
+                    "hostname s1-leaf4": null,
+                    "interface Ethernet1": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf3_Ethernet1": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet2": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE1_Ethernet5": null,
+                            "ip address 192.168.51.13/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet3": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-SPINE2_Ethernet5": null,
+                            "ip address 192.168.51.15/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet4": {
+                        "cmds": {
+                            "description Routed_Interface_2": null,
+                            "ip address 10.192.192.21/24": null,
+                            "mtu 9216": null,
+                            "no switchport": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet6": {
+                        "cmds": {
+                            "channel-group 1 mode active": null,
+                            "description MLAG_PEER_s1-leaf3_Ethernet6": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback0": {
+                        "cmds": {
+                            "description EVPN_Overlay_Peering": null,
+                            "ip address 192.168.246.6/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback1": {
+                        "cmds": {
+                            "description VTEP_VXLAN_Tunnel_Source": null,
+                            "ip address 192.168.236.5/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Loopback100": {
+                        "cmds": {
+                            "description bluevrf_VTEP_DIAGNOSTICS": null,
+                            "ip address 10.255.1.6/32": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Management0": {
+                        "cmds": {
+                            "description OOB_MANAGEMENT": null,
+                            "description oob_management": null,
+                            "ip address 192.168.0.15/24": null
+                        },
+                        "comments": []
+                    },
+                    "interface Port-Channel1": {
+                        "cmds": {
+                            "description MLAG_PEER_s1-leaf3_Po1": null,
+                            "switchport mode trunk": null,
+                            "switchport trunk group LEAF_PEER_L3": null,
+                            "switchport trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2300": {
+                        "cmds": {
+                            "description bluenet1": null,
+                            "ip address virtual 192.168.11.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan2301": {
+                        "cmds": {
+                            "description bluenet2": null,
+                            "ip address virtual 192.168.12.1/24": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan3099": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_iBGP: vrf bluevrf": null,
+                            "ip address 10.255.251.5/31": null,
+                            "mtu 1500": null,
+                            "vrf bluevrf": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4093": {
+                        "cmds": {
+                            "description MLAG_PEER_L3_PEERING": null,
+                            "ip address 10.255.251.5/31": null,
+                            "mtu 1500": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vlan4094": {
+                        "cmds": {
+                            "description MLAG_PEER": null,
+                            "ip address 10.255.252.5/31": null,
+                            "mtu 1500": null,
+                            "no autostate": null
+                        },
+                        "comments": []
+                    },
+                    "interface Vxlan1": {
+                        "cmds": {
+                            "description s1-leaf4_VTEP": null,
+                            "vxlan source-interface Loopback1": null,
+                            "vxlan udp-port 4789": null,
+                            "vxlan virtual-router encapsulation mac-address mlag-system-id": null,
+                            "vxlan vlan 20 vni 30002": null,
+                            "vxlan vlan 2300 vni 32300": null,
+                            "vxlan vlan 2301 vni 32301": null,
+                            "vxlan vrf bluevrf vni 100": null
+                        },
+                        "comments": []
+                    },
+                    "ip address virtual source-nat vrf bluevrf address 10.255.1.6": null,
+                    "ip name-server vrf default 192.168.2.1": null,
+                    "ip name-server vrf default 8.8.8.8": null,
+                    "ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY": {
+                        "cmds": {
+                            "seq 10 permit 192.168.246.0/24 eq 32": null,
+                            "seq 20 permit 192.168.236.0/24 eq 32": null
+                        },
+                        "comments": []
+                    },
+                    "ip radius source-interface Management0": null,
+                    "ip route 0.0.0.0/0 192.168.0.1": null,
+                    "ip routing": null,
+                    "ip routing vrf bluevrf": null,
+                    "ip virtual-router mac-address 02:04:02:04:02:04": null,
+                    "management api http-commands": {
+                        "cmds": {
+                            "no shutdown": null,
+                            "vrf default": {
+                                "cmds": {
+                                    "no shutdown": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "mlag configuration": {
+                        "cmds": {
+                            "domain-id pod2": null,
+                            "local-interface Vlan4094": null,
+                            "peer-address 10.255.252.4": null,
+                            "peer-link Port-Channel1": null,
+                            "reload-delay mlag 300": null,
+                            "reload-delay non-mlag 330": null
+                        },
+                        "comments": []
+                    },
+                    "no aaa root": null,
+                    "no spanning-tree vlan-id 4093-4094": null,
+                    "ntp server 192.168.0.1 iburst source Management0": null,
+                    "ntp server time.google.com prefer iburst": null,
+                    "radius-server host 192.168.0.1 key 7 0207165218120E": null,
+                    "route-map RM-CONN-2-BGP permit 10": {
+                        "cmds": {
+                            "match ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY": null
+                        },
+                        "comments": []
+                    },
+                    "route-map RM-MLAG-PEER-IN permit 10": {
+                        "cmds": {
+                            "description Make routes learned over MLAG Peer-link less preferred on spines to ensure optimal routing": null,
+                            "set origin incomplete": null
+                        },
+                        "comments": []
+                    },
+                    "router bfd": {
+                        "cmds": {
+                            "multihop interval 1200 min-rx 1200 multiplier 3": null
+                        },
+                        "comments": []
+                    },
+                    "router bgp 65102": {
+                        "cmds": {
+                            "address-family evpn": {
+                                "cmds": {
+                                    "neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "address-family ipv4": {
+                                "cmds": {
+                                    "neighbor IPv4-UNDERLAY-PEERS activate": null,
+                                    "neighbor MLAG-IPv4-UNDERLAY-PEER activate": null,
+                                    "no neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "distance bgp 20 200 200": null,
+                            "graceful-restart": null,
+                            "graceful-restart restart-time 300": null,
+                            "maximum-paths 4 ecmp 4": null,
+                            "neighbor 10.255.251.4 description s1-leaf3": null,
+                            "neighbor 10.255.251.4 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                            "neighbor 192.168.246.1 description s1-spine1": null,
+                            "neighbor 192.168.246.1 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.1 remote-as 64999": null,
+                            "neighbor 192.168.246.2 description s1-spine2": null,
+                            "neighbor 192.168.246.2 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.2 remote-as 64999": null,
+                            "neighbor 192.168.51.12 description s1-spine1_Ethernet5": null,
+                            "neighbor 192.168.51.12 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.12 remote-as 64999": null,
+                            "neighbor 192.168.51.14 description s1-spine2_Ethernet5": null,
+                            "neighbor 192.168.51.14 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.14 remote-as 64999": null,
+                            "neighbor EVPN-OVERLAY-PEERS bfd": null,
+                            "neighbor EVPN-OVERLAY-PEERS ebgp-multihop 3": null,
+                            "neighbor EVPN-OVERLAY-PEERS maximum-routes 0": null,
+                            "neighbor EVPN-OVERLAY-PEERS peer group": null,
+                            "neighbor EVPN-OVERLAY-PEERS send-community": null,
+                            "neighbor EVPN-OVERLAY-PEERS update-source Loopback0": null,
+                            "neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000": null,
+                            "neighbor IPv4-UNDERLAY-PEERS peer group": null,
+                            "neighbor IPv4-UNDERLAY-PEERS send-community": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER description s1-leaf3": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER maximum-routes 12000": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER next-hop-self": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER peer group": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER remote-as 65102": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER route-map RM-MLAG-PEER-IN in": null,
+                            "neighbor MLAG-IPv4-UNDERLAY-PEER send-community": null,
+                            "no bgp default ipv4-unicast": null,
+                            "redistribute connected route-map RM-CONN-2-BGP": null,
+                            "router-id 192.168.246.6": null,
+                            "vlan-aware-bundle ExternalNetwork": {
+                                "cmds": {
+                                    "rd 192.168.246.6:30002": null,
+                                    "redistribute learned": null,
+                                    "route-target both 30002:30002": null,
+                                    "vlan 20": null
+                                },
+                                "comments": []
+                            },
+                            "vlan-aware-bundle bluevrf": {
+                                "cmds": {
+                                    "rd 192.168.246.6:100": null,
+                                    "redistribute learned": null,
+                                    "route-target both 100:100": null,
+                                    "vlan 2300-2301": null
+                                },
+                                "comments": []
+                            },
+                            "vrf bluevrf": {
+                                "cmds": {
+                                    "neighbor 10.255.251.4 peer group MLAG-IPv4-UNDERLAY-PEER": null,
+                                    "rd 192.168.246.6:100": null,
+                                    "redistribute connected": null,
+                                    "route-target export evpn 100:100": null,
+                                    "route-target import evpn 100:100": null,
+                                    "router-id 192.168.246.6": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "router multicast": {
+                        "cmds": {
+                            "ipv4": {
+                                "cmds": {
+                                    "routing": null,
+                                    "software-forwarding sfe": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "service routing protocols model multi-agent": null,
+                    "spanning-tree mode mstp": null,
+                    "spanning-tree mst 0 priority 16384": null,
+                    "system l1": {
+                        "cmds": {
+                            "unsupported error-correction action error": null,
+                            "unsupported speed action error": null
+                        },
+                        "comments": []
+                    },
+                    "transceiver qsfp default-mode 4x10G": null,
+                    "username admin privilege 15 role network-admin secret 5 $1$5O85YVVn$HrXcfOivJEnISTMb6xrJc.": null,
+                    "username arista privilege 15 role network-admin secret 5 $1$4VjIjfd1$XkUVulbNDESHFzcxDU.Tk1": null,
+                    "username arista ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjyBFJuXUDRPFV6eLHPBCYZ/YWyonAJxi5H6Hk2yEr50NgOkjt0KGaCnk13lHTc+fUqO2dW2luCSWYey3G2V9I7oTu/OlnJ8upatCJ+U7dfEceUFBAUpPLA89ZOa9OJ8R0wN7l8tD8eGUt52kIn2KKJh4fd8tytgD9oN6QL/WvqjfpC2Ha2ibWq7N71yKMm4akBJ8rvyTAoXFRu0Yp1Shrx461BNYWcs+b7aOyWcyp2xy3u17idBGRh2nsK/N4kVnPGLBZYQ6RcAL9l7MtWPh71ce/IW38IFL0mp/PTz/J8POo2+1ZKcPABbFobi+t397P9C0S/EgY6ppvAOxD+c+3 arista@tsmc-test-2-1-4a9cb9a9-eos": null,
+                    "username test-admin privilege 15 role network-admin secret sha512 $6$7GTxsrRjnwheeKfR$zhJ8qycVjAJz41rf5JRSfWIzp93IL5WL7sMS/Taz1yfShz.MAnoajCf7R2n1/EZW7PN5QA3Huayl0lVQesBYN1": null,
+                    "vlan 20": {
+                        "cmds": {
+                            "name ExternalNetwork": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2300": {
+                        "cmds": {
+                            "name bluenet1": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 2301": {
+                        "cmds": {
+                            "name bluenet2": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 3099": {
+                        "cmds": {
+                            "name MLAG_iBGP_bluevrf": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4093": {
+                        "cmds": {
+                            "name LEAF_PEER_L3": null,
+                            "trunk group LEAF_PEER_L3": null
+                        },
+                        "comments": []
+                    },
+                    "vlan 4094": {
+                        "cmds": {
+                            "name MLAG_PEER": null,
+                            "trunk group MLAG": null
+                        },
+                        "comments": []
+                    },
+                    "vlan internal order ascending range 1006 1199": null,
+                    "vrf instance bluevrf": {
+                        "cmds": {},
+                        "comments": []
+                    }
+                },
+                "comments": [],
+                "header": [
+                    "! device: s1-leaf4 (cEOSLab, EOS-4.32.1F-37313256.4321F (engineering build))"
+                ]
+            }
+        },
+        "s1-spine1": {
+            "show_lldp_neighbors":
+                {
+                "lldpNeighbors": [
+                    {
+                        "neighborDevice": "s1-spine2.tsmc.com.tw",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet1",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf1.tsmc.com.tw",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet2",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf2.tsmc.com.tw",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet3",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf3.tsmc.com.tw",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet4",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf4.tsmc.com.tw",
+                        "neighborPort": "Ethernet2",
+                        "port": "Ethernet5",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine2.tsmc.com.tw",
+                        "neighborPort": "Ethernet6",
+                        "port": "Ethernet6",
+                        "ttl": 120
+                    }
+                ],
+                "tablesAgeOuts": 0,
+                "tablesDeletes": 0,
+                "tablesDrops": 0,
+                "tablesInserts": 6,
+                "tablesLastChangeTime": 1747296746.3325155
+            },
+            "show_ip_interface_brief":
+                {
+                "interfaces": {
+                    "Ethernet2": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.0",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet2",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet3": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.4",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet3",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet4": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.8",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet4",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet5": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.12",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet5",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.246.1",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Management0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.0.10",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Management0",
+                        "nonRoutableClassEIntf": false
+                    }
+                }
+            },
+            "show_interfaces_description":
+                {
+                "interfaceDescriptions": {
+                    "Ethernet1": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet2": {
+                        "description": "P2P_LINK_TO_S1-LEAF1_Ethernet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet3": {
+                        "description": "P2P_LINK_TO_S1-LEAF2_Ethernet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet4": {
+                        "description": "P2P_LINK_TO_S1-LEAF3_Ethernet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet5": {
+                        "description": "P2P_LINK_TO_S1-LEAF4_Ethernet2",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet6": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet7": {
+                        "description": "",
+                        "interfaceStatus": "down",
+                        "lineProtocolStatus": "down"
+                    },
+                    "Ethernet8": {
+                        "description": "",
+                        "interfaceStatus": "down",
+                        "lineProtocolStatus": "down"
+                    },
+                    "Loopback0": {
+                        "description": "EVPN_Overlay_Peering",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Management0": {
+                        "description": "oob_management",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    }
+                }
+            },
+            "show_version":
+                {
+                "architecture": "i686",
+                "bootupTimestamp": 1747294972.0863383,
+                "configMacAddress": "00:00:00:00:00:00",
+                "hardwareRevision": "",
+                "hwMacAddress": "00:00:00:00:00:00",
+                "imageFormatVersion": "1.0",
+                "imageOptimization": "None",
+                "internalBuildId": "7a617a29-3c49-4a05-bc51-0bd347da9799",
+                "internalVersion": "4.32.1F-37313256.4321F",
+                "isIntlVersion": false,
+                "kernelVersion": "5.14.0-503.21.1.el9_5.x86_64",
+                "memFree": 2344088,
+                "memTotal": 49062216,
+                "mfgName": "Arista",
+                "modelName": "cEOSLab",
+                "serialNumber": "s1-spine1",
+                "systemMacAddress": "00:1c:73:c0:c6:10",
+                "uptime": 1878.7633414268494,
+                "version": "4.32.1F-37313256.4321F (engineering build)"
+            },
+            "show_running-config":
+                {
+                "cmds": {
+                    "aaa authentication login default group atds local": null,
+                    "aaa authorization commands all default local": null,
+                    "aaa authorization exec default group atds local": null,
+                    "aaa group server radius atds": {
+                        "cmds": {
+                            "server 192.168.0.1": null
+                        },
+                        "comments": []
+                    },
+                    "daemon TerminAttr": {
+                        "cmds": {
+                            "exec /usr/bin/TerminAttr -cvcompression=gzip -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=default -taillogs -disableaaa": null,
+                            "no shutdown": null
+                        },
+                        "comments": []
+                    },
+                    "dns domain tsmc.com.tw": null,
+                    "hostname s1-spine1": null,
+                    "interface Ethernet1": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Ethernet2": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF1_Ethernet2": null,
+                            "ip address 192.168.51.0/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet3": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF2_Ethernet2": null,
+                            "ip address 192.168.51.4/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet4": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF3_Ethernet2": null,
+                            "ip address 192.168.51.8/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet5": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF4_Ethernet2": null,
+                            "ip address 192.168.51.12/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet6": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Ethernet7": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Ethernet8": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Loopback0": {
+                        "cmds": {
+                            "description EVPN_Overlay_Peering": null,
+                            "ip address 192.168.246.1/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Management0": {
+                        "cmds": {
+                            "description OOB_MANAGEMENT": null,
+                            "description oob_management": null,
+                            "ip address 192.168.0.10/24": null
+                        },
+                        "comments": []
+                    },
+                    "ip name-server vrf default 192.168.2.1": null,
+                    "ip name-server vrf default 8.8.8.8": null,
+                    "ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY": {
+                        "cmds": {
+                            "seq 10 permit 192.168.246.0/24 eq 32": null
+                        },
+                        "comments": []
+                    },
+                    "ip radius source-interface Management0": null,
+                    "ip route 0.0.0.0/0 192.168.0.1": null,
+                    "ip routing": null,
+                    "management api http-commands": {
+                        "cmds": {
+                            "no shutdown": null,
+                            "vrf default": {
+                                "cmds": {
+                                    "no shutdown": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "no aaa root": null,
+                    "ntp server 192.168.0.1 iburst source Management0": null,
+                    "ntp server time.google.com prefer iburst": null,
+                    "radius-server host 192.168.0.1 key 7 0207165218120E": null,
+                    "route-map RM-CONN-2-BGP permit 10": {
+                        "cmds": {
+                            "match ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY": null
+                        },
+                        "comments": []
+                    },
+                    "router bfd": {
+                        "cmds": {
+                            "multihop interval 1200 min-rx 1200 multiplier 3": null
+                        },
+                        "comments": []
+                    },
+                    "router bgp 64999": {
+                        "cmds": {
+                            "address-family evpn": {
+                                "cmds": {
+                                    "neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "address-family ipv4": {
+                                "cmds": {
+                                    "neighbor IPv4-UNDERLAY-PEERS activate": null,
+                                    "no neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "distance bgp 20 200 200": null,
+                            "graceful-restart": null,
+                            "graceful-restart restart-time 300": null,
+                            "maximum-paths 4 ecmp 4": null,
+                            "neighbor 192.168.246.3 description s1-leaf1": null,
+                            "neighbor 192.168.246.3 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.3 remote-as 65101": null,
+                            "neighbor 192.168.246.4 description s1-leaf2": null,
+                            "neighbor 192.168.246.4 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.4 remote-as 65101": null,
+                            "neighbor 192.168.246.5 description s1-leaf3": null,
+                            "neighbor 192.168.246.5 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.5 remote-as 65102": null,
+                            "neighbor 192.168.246.6 description s1-leaf4": null,
+                            "neighbor 192.168.246.6 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.6 remote-as 65102": null,
+                            "neighbor 192.168.51.1 description s1-leaf1_Ethernet2": null,
+                            "neighbor 192.168.51.1 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.1 remote-as 65101": null,
+                            "neighbor 192.168.51.13 description s1-leaf4_Ethernet2": null,
+                            "neighbor 192.168.51.13 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.13 remote-as 65102": null,
+                            "neighbor 192.168.51.5 description s1-leaf2_Ethernet2": null,
+                            "neighbor 192.168.51.5 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.5 remote-as 65101": null,
+                            "neighbor 192.168.51.9 description s1-leaf3_Ethernet2": null,
+                            "neighbor 192.168.51.9 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.9 remote-as 65102": null,
+                            "neighbor EVPN-OVERLAY-PEERS bfd": null,
+                            "neighbor EVPN-OVERLAY-PEERS ebgp-multihop 3": null,
+                            "neighbor EVPN-OVERLAY-PEERS maximum-routes 0": null,
+                            "neighbor EVPN-OVERLAY-PEERS next-hop-unchanged": null,
+                            "neighbor EVPN-OVERLAY-PEERS peer group": null,
+                            "neighbor EVPN-OVERLAY-PEERS send-community": null,
+                            "neighbor EVPN-OVERLAY-PEERS update-source Loopback0": null,
+                            "neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000": null,
+                            "neighbor IPv4-UNDERLAY-PEERS peer group": null,
+                            "neighbor IPv4-UNDERLAY-PEERS send-community": null,
+                            "no bgp default ipv4-unicast": null,
+                            "redistribute connected route-map RM-CONN-2-BGP": null,
+                            "router-id 192.168.246.1": null
+                        },
+                        "comments": []
+                    },
+                    "router multicast": {
+                        "cmds": {
+                            "ipv4": {
+                                "cmds": {
+                                    "routing": null,
+                                    "software-forwarding sfe": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "service routing protocols model multi-agent": null,
+                    "spanning-tree mode none": null,
+                    "system l1": {
+                        "cmds": {
+                            "unsupported error-correction action error": null,
+                            "unsupported speed action error": null
+                        },
+                        "comments": []
+                    },
+                    "transceiver qsfp default-mode 4x10G": null,
+                    "username admin privilege 15 role network-admin secret 5 $1$5O85YVVn$HrXcfOivJEnISTMb6xrJc.": null,
+                    "username arista privilege 15 role network-admin secret 5 $1$4VjIjfd1$XkUVulbNDESHFzcxDU.Tk1": null,
+                    "username arista ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjyBFJuXUDRPFV6eLHPBCYZ/YWyonAJxi5H6Hk2yEr50NgOkjt0KGaCnk13lHTc+fUqO2dW2luCSWYey3G2V9I7oTu/OlnJ8upatCJ+U7dfEceUFBAUpPLA89ZOa9OJ8R0wN7l8tD8eGUt52kIn2KKJh4fd8tytgD9oN6QL/WvqjfpC2Ha2ibWq7N71yKMm4akBJ8rvyTAoXFRu0Yp1Shrx461BNYWcs+b7aOyWcyp2xy3u17idBGRh2nsK/N4kVnPGLBZYQ6RcAL9l7MtWPh71ce/IW38IFL0mp/PTz/J8POo2+1ZKcPABbFobi+t397P9C0S/EgY6ppvAOxD+c+3 arista@tsmc-test-2-1-4a9cb9a9-eos": null,
+                    "username test-admin privilege 15 role network-admin secret sha512 $6$7GTxsrRjnwheeKfR$zhJ8qycVjAJz41rf5JRSfWIzp93IL5WL7sMS/Taz1yfShz.MAnoajCf7R2n1/EZW7PN5QA3Huayl0lVQesBYN1": null,
+                    "vlan internal order ascending range 1006 1199": null
+                },
+                "comments": [],
+                "header": [
+                    "! device: s1-spine1 (cEOSLab, EOS-4.32.1F-37313256.4321F (engineering build))"
+                ]
+            }
+        },
+        "s1-spine2": {
+            "show_lldp_neighbors":
+                {
+                "lldpNeighbors": [
+                    {
+                        "neighborDevice": "s1-spine1.tsmc.com.tw",
+                        "neighborPort": "Ethernet1",
+                        "port": "Ethernet1",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf1.tsmc.com.tw",
+                        "neighborPort": "Ethernet3",
+                        "port": "Ethernet2",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf2.tsmc.com.tw",
+                        "neighborPort": "Ethernet3",
+                        "port": "Ethernet3",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf3.tsmc.com.tw",
+                        "neighborPort": "Ethernet3",
+                        "port": "Ethernet4",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-leaf4.tsmc.com.tw",
+                        "neighborPort": "Ethernet3",
+                        "port": "Ethernet5",
+                        "ttl": 120
+                    },
+                    {
+                        "neighborDevice": "s1-spine1.tsmc.com.tw",
+                        "neighborPort": "Ethernet6",
+                        "port": "Ethernet6",
+                        "ttl": 120
+                    }
+                ],
+                "tablesAgeOuts": 0,
+                "tablesDeletes": 0,
+                "tablesDrops": 0,
+                "tablesInserts": 6,
+                "tablesLastChangeTime": 1747296740.0814357
+            },
+            "show_ip_interface_brief":
+                {
+                "interfaces": {
+                    "Ethernet2": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.2",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet2",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet3": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.6",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet3",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet4": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.10",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet4",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Ethernet5": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.51.14",
+                                "maskLen": 31
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Ethernet5",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Loopback0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.246.2",
+                                "maskLen": 32
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 65535,
+                        "name": "Loopback0",
+                        "nonRoutableClassEIntf": false
+                    },
+                    "Management0": {
+                        "interfaceAddress": {
+                            "ipAddr": {
+                                "address": "192.168.0.11",
+                                "maskLen": 24
+                            }
+                        },
+                        "interfaceStatus": "connected",
+                        "ipv4Routable0": false,
+                        "ipv4Routable240": false,
+                        "lineProtocolStatus": "up",
+                        "mtu": 1500,
+                        "name": "Management0",
+                        "nonRoutableClassEIntf": false
+                    }
+                }
+            },
+            "show_interfaces_description":
+                {
+                "interfaceDescriptions": {
+                    "Ethernet1": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet2": {
+                        "description": "P2P_LINK_TO_S1-LEAF1_Ethernet3",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet3": {
+                        "description": "P2P_LINK_TO_S1-LEAF2_Ethernet3",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet4": {
+                        "description": "P2P_LINK_TO_S1-LEAF3_Ethernet3",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet5": {
+                        "description": "P2P_LINK_TO_S1-LEAF4_Ethernet3",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet6": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Ethernet7": {
+                        "description": "",
+                        "interfaceStatus": "down",
+                        "lineProtocolStatus": "down"
+                    },
+                    "Ethernet8": {
+                        "description": "",
+                        "interfaceStatus": "down",
+                        "lineProtocolStatus": "down"
+                    },
+                    "Loopback0": {
+                        "description": "EVPN_Overlay_Peering",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    },
+                    "Management0": {
+                        "description": "",
+                        "interfaceStatus": "up",
+                        "lineProtocolStatus": "up"
+                    }
+                }
+            },
+            "show_version":
+                {
+                "architecture": "i686",
+                "bootupTimestamp": 1747294974.3415685,
+                "configMacAddress": "00:00:00:00:00:00",
+                "hardwareRevision": "",
+                "hwMacAddress": "00:00:00:00:00:00",
+                "imageFormatVersion": "1.0",
+                "imageOptimization": "None",
+                "internalBuildId": "7a617a29-3c49-4a05-bc51-0bd347da9799",
+                "internalVersion": "4.32.1F-37313256.4321F",
+                "isIntlVersion": false,
+                "kernelVersion": "5.14.0-503.21.1.el9_5.x86_64",
+                "memFree": 2343240,
+                "memTotal": 49062216,
+                "mfgName": "Arista",
+                "modelName": "cEOSLab",
+                "serialNumber": "s1-spine2",
+                "systemMacAddress": "00:1c:73:c0:c6:11",
+                "uptime": 1873.519211769104,
+                "version": "4.32.1F-37313256.4321F (engineering build)"
+            },
+            "show_running-config":
+                {
+                "cmds": {
+                    "aaa authentication login default group atds local": null,
+                    "aaa authorization commands all default local": null,
+                    "aaa authorization exec default group atds local": null,
+                    "aaa group server radius atds": {
+                        "cmds": {
+                            "server 192.168.0.1": null
+                        },
+                        "comments": []
+                    },
+                    "daemon TerminAttr": {
+                        "cmds": {
+                            "exec /usr/bin/TerminAttr -cvcompression=gzip -smashexcludes=ale,flexCounter,hardware,kni,pulse,strata -ingestexclude=/Sysdb/cell/1/agent,/Sysdb/cell/2/agent -cvaddr=192.168.0.5:9910 -cvauth=token,/tmp/token -cvvrf=default -taillogs -disableaaa": null,
+                            "no shutdown": null
+                        },
+                        "comments": []
+                    },
+                    "dns domain tsmc.com.tw": null,
+                    "hostname s1-spine2": null,
+                    "interface Ethernet1": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Ethernet2": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF1_Ethernet3": null,
+                            "ip address 192.168.51.2/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet3": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF2_Ethernet3": null,
+                            "ip address 192.168.51.6/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet4": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF3_Ethernet3": null,
+                            "ip address 192.168.51.10/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet5": {
+                        "cmds": {
+                            "description P2P_LINK_TO_S1-LEAF4_Ethernet3": null,
+                            "ip address 192.168.51.14/31": null,
+                            "mtu 1500": null,
+                            "no switchport": null
+                        },
+                        "comments": []
+                    },
+                    "interface Ethernet6": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Ethernet7": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Ethernet8": {
+                        "cmds": {},
+                        "comments": []
+                    },
+                    "interface Loopback0": {
+                        "cmds": {
+                            "description EVPN_Overlay_Peering": null,
+                            "ip address 192.168.246.2/32": null
+                        },
+                        "comments": []
+                    },
+                    "interface Management0": {
+                        "cmds": {
+                            "description oob_management": null,
+                            "ip address 192.168.0.11/24": null
+                        },
+                        "comments": []
+                    },
+                    "ip name-server vrf default 192.168.2.1": null,
+                    "ip name-server vrf default 8.8.8.8": null,
+                    "ip prefix-list PL-LOOPBACKS-EVPN-OVERLAY": {
+                        "cmds": {
+                            "seq 10 permit 192.168.246.0/24 eq 32": null
+                        },
+                        "comments": []
+                    },
+                    "ip radius source-interface Management0": null,
+                    "ip route 0.0.0.0/0 192.168.0.1": null,
+                    "ip routing": null,
+                    "management api http-commands": {
+                        "cmds": {
+                            "no shutdown": null,
+                            "vrf default": {
+                                "cmds": {
+                                    "no shutdown": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "no aaa root": null,
+                    "ntp server 192.168.0.1 iburst source Management0": null,
+                    "ntp server time.google.com prefer iburst": null,
+                    "radius-server host 192.168.0.1 key 7 0207165218120E": null,
+                    "route-map RM-CONN-2-BGP permit 10": {
+                        "cmds": {
+                            "match ip address prefix-list PL-LOOPBACKS-EVPN-OVERLAY": null
+                        },
+                        "comments": []
+                    },
+                    "router bfd": {
+                        "cmds": {
+                            "multihop interval 1200 min-rx 1200 multiplier 3": null
+                        },
+                        "comments": []
+                    },
+                    "router bgp 64999": {
+                        "cmds": {
+                            "address-family evpn": {
+                                "cmds": {
+                                    "neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "address-family ipv4": {
+                                "cmds": {
+                                    "neighbor IPv4-UNDERLAY-PEERS activate": null,
+                                    "no neighbor EVPN-OVERLAY-PEERS activate": null
+                                },
+                                "comments": []
+                            },
+                            "distance bgp 20 200 200": null,
+                            "graceful-restart": null,
+                            "graceful-restart restart-time 300": null,
+                            "maximum-paths 4 ecmp 4": null,
+                            "neighbor 192.168.246.3 description s1-leaf1": null,
+                            "neighbor 192.168.246.3 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.3 remote-as 65101": null,
+                            "neighbor 192.168.246.4 description s1-leaf2": null,
+                            "neighbor 192.168.246.4 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.4 remote-as 65101": null,
+                            "neighbor 192.168.246.5 description s1-leaf3": null,
+                            "neighbor 192.168.246.5 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.5 remote-as 65102": null,
+                            "neighbor 192.168.246.6 description s1-leaf4": null,
+                            "neighbor 192.168.246.6 peer group EVPN-OVERLAY-PEERS": null,
+                            "neighbor 192.168.246.6 remote-as 65102": null,
+                            "neighbor 192.168.51.11 description s1-leaf3_Ethernet3": null,
+                            "neighbor 192.168.51.11 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.11 remote-as 65102": null,
+                            "neighbor 192.168.51.15 description s1-leaf4_Ethernet3": null,
+                            "neighbor 192.168.51.15 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.15 remote-as 65102": null,
+                            "neighbor 192.168.51.3 description s1-leaf1_Ethernet3": null,
+                            "neighbor 192.168.51.3 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.3 remote-as 65101": null,
+                            "neighbor 192.168.51.7 description s1-leaf2_Ethernet3": null,
+                            "neighbor 192.168.51.7 peer group IPv4-UNDERLAY-PEERS": null,
+                            "neighbor 192.168.51.7 remote-as 65101": null,
+                            "neighbor EVPN-OVERLAY-PEERS bfd": null,
+                            "neighbor EVPN-OVERLAY-PEERS ebgp-multihop 3": null,
+                            "neighbor EVPN-OVERLAY-PEERS maximum-routes 0": null,
+                            "neighbor EVPN-OVERLAY-PEERS next-hop-unchanged": null,
+                            "neighbor EVPN-OVERLAY-PEERS peer group": null,
+                            "neighbor EVPN-OVERLAY-PEERS send-community": null,
+                            "neighbor EVPN-OVERLAY-PEERS update-source Loopback0": null,
+                            "neighbor IPv4-UNDERLAY-PEERS maximum-routes 12000": null,
+                            "neighbor IPv4-UNDERLAY-PEERS peer group": null,
+                            "neighbor IPv4-UNDERLAY-PEERS send-community": null,
+                            "no bgp default ipv4-unicast": null,
+                            "redistribute connected route-map RM-CONN-2-BGP": null,
+                            "router-id 192.168.246.2": null
+                        },
+                        "comments": []
+                    },
+                    "router multicast": {
+                        "cmds": {
+                            "ipv4": {
+                                "cmds": {
+                                    "routing": null,
+                                    "software-forwarding sfe": null
+                                },
+                                "comments": []
+                            }
+                        },
+                        "comments": []
+                    },
+                    "service routing protocols model multi-agent": null,
+                    "spanning-tree mode none": null,
+                    "system l1": {
+                        "cmds": {
+                            "unsupported error-correction action error": null,
+                            "unsupported speed action error": null
+                        },
+                        "comments": []
+                    },
+                    "transceiver qsfp default-mode 4x10G": null,
+                    "username admin privilege 15 role network-admin secret 5 $1$5O85YVVn$HrXcfOivJEnISTMb6xrJc.": null,
+                    "username arista privilege 15 role network-admin secret 5 $1$4VjIjfd1$XkUVulbNDESHFzcxDU.Tk1": null,
+                    "username arista ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjyBFJuXUDRPFV6eLHPBCYZ/YWyonAJxi5H6Hk2yEr50NgOkjt0KGaCnk13lHTc+fUqO2dW2luCSWYey3G2V9I7oTu/OlnJ8upatCJ+U7dfEceUFBAUpPLA89ZOa9OJ8R0wN7l8tD8eGUt52kIn2KKJh4fd8tytgD9oN6QL/WvqjfpC2Ha2ibWq7N71yKMm4akBJ8rvyTAoXFRu0Yp1Shrx461BNYWcs+b7aOyWcyp2xy3u17idBGRh2nsK/N4kVnPGLBZYQ6RcAL9l7MtWPh71ce/IW38IFL0mp/PTz/J8POo2+1ZKcPABbFobi+t397P9C0S/EgY6ppvAOxD+c+3 arista@tsmc-test-2-1-4a9cb9a9-eos": null,
+                    "username test-admin privilege 15 role network-admin secret sha512 $6$7GTxsrRjnwheeKfR$zhJ8qycVjAJz41rf5JRSfWIzp93IL5WL7sMS/Taz1yfShz.MAnoajCf7R2n1/EZW7PN5QA3Huayl0lVQesBYN1": null,
+                    "vlan internal order ascending range 1006 1199": null
+                },
+                "comments": [],
+                "header": [
+                    "! device: s1-spine2 (cEOSLab, EOS-4.32.1F-37313256.4321F (engineering build))"
+                ]
+            }
+        }
+    }
+}

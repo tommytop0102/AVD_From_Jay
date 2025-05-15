@@ -8,4 +8,4 @@ custom_structured_configuration_ethernet_interfaces:
   vrf: bluevrf
   type: routed
   mtu: 9000
-  description: "Routed_Interface_1"
+  description: "Routed_Interface_4"

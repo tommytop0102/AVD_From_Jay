@@ -6,7 +6,10 @@
   - [Management Interfaces](#management-interfaces)
   - [DNS Domain](#dns-domain)
   - [IP Name Servers](#ip-name-servers)
+  - [NTP](#ntp)
   - [Management API HTTP](#management-api-http)
+- [Authentication](#authentication)
+  - [Local Users](#local-users)
 - [Spanning Tree](#spanning-tree)
   - [Spanning Tree Summary](#spanning-tree-summary)
   - [Spanning Tree Device Configuration](#spanning-tree-device-configuration)
@@ -61,12 +64,12 @@ interface Management0
 
 ### DNS Domain
 
-DNS domain: atd.lab
+DNS domain: tsmc.com.tw
 
 #### DNS Domain Device Configuration
 
 ```eos
-dns domain atd.lab
+dns domain tsmc.com.tw
 !
 ```
 
@@ -84,6 +87,23 @@ dns domain atd.lab
 ```eos
 ip name-server vrf default 8.8.8.8
 ip name-server vrf default 192.168.2.1
+```
+
+### NTP
+
+#### NTP Summary
+
+##### NTP Servers
+
+| Server | VRF | Preferred | Burst | iBurst | Version | Min Poll | Max Poll | Local-interface | Key |
+| ------ | --- | --------- | ----- | ------ | ------- | -------- | -------- | --------------- | --- |
+| time.google.com | default | True | - | True | - | - | - | - | - |
+
+#### NTP Device Configuration
+
+```eos
+!
+ntp server time.google.com prefer iburst
 ```
 
 ### Management API HTTP
@@ -110,6 +130,23 @@ management api http-commands
    !
    vrf default
       no shutdown
+```
+
+## Authentication
+
+### Local Users
+
+#### Local Users Summary
+
+| User | Privilege | Role | Disabled | Shell |
+| ---- | --------- | ---- | -------- | ----- |
+| test-admin | 15 | network-admin | False | - |
+
+#### Local Users Device Configuration
+
+```eos
+!
+username test-admin privilege 15 role network-admin secret sha512 <removed>
 ```
 
 ## Spanning Tree
