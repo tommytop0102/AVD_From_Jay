@@ -34,7 +34,8 @@
 #       - endpoint_ports: [Eth1, Eth2]
 #         switch_ports: [Ethernet4, Ethernet4]
 #         switches: [s1-leaf1, s1-leaf2]
-#         profile: TRUNK
+#         mode: access
+#         vlans: "2300"
 #         port_channel:
 #           description: PortChannel
 #           mode: active
