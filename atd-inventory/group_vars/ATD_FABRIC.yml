@@ -71,8 +71,8 @@ l3leaf:
     uplink_switches: [s1-spine1, s1-spine2]
     uplink_ipv4_pool: 192.168.51.0/24 # default P2P IP usage is /31
     mlag_interfaces: [Ethernet1, Ethernet6] # default is channel group 1/port-channel 1 
-    mlag_peer_ipv4_pool: 10.255.252.0/24 # default P2P IP usage is /31, and vlan ID and interface is 4094
-    mlag_peer_l3_ipv4_pool: 10.255.251.0/24 # default P2P IP usage is /31, and vlan ID and interface is 4093
+    mlag_peer_ipv4_pool: 10.255.252.0/24 # default P2P IP usage is /31, vlan ID and interface is 4094
+    mlag_peer_l3_ipv4_pool: 10.255.251.0/24 # default P2P IP usage is /31, vlan ID and interface is 4093
     virtual_router_mac_address: 02:04:02:04:02:04
     spanning_tree_mode: mstp # Arista switch default
     spanning_tree_priority: 16384
