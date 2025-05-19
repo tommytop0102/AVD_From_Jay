@@ -463,8 +463,8 @@ interface Vlan4094
 | VLAN | VNI | Flood List | Multicast Group |
 | ---- | --- | ---------- | --------------- |
 | 20 | 30002 | - | - |
-| 2300 | 32300 | - | - |
-| 2301 | 32301 | - | - |
+| 2300 | 22300 | - | - |
+| 2301 | 22301 | - | - |
 
 ##### VRF to VNI and Multicast Group Mappings
 
@@ -482,8 +482,8 @@ interface Vxlan1
    vxlan virtual-router encapsulation mac-address mlag-system-id
    vxlan udp-port 4789
    vxlan vlan 20 vni 30002
-   vxlan vlan 2300 vni 32300
-   vxlan vlan 2301 vni 32301
+   vxlan vlan 2300 vni 22300
+   vxlan vlan 2301 vni 22301
    vxlan vrf bluevrf vni 100
 ```
 
@@ -626,8 +626,8 @@ ASN Notation: asplain
 | VLAN | Route-Distinguisher | Both Route-Target | Import Route Target | Export Route-Target | Redistribute |
 | ---- | ------------------- | ----------------- | ------------------- | ------------------- | ------------ |
 | 20 | 192.168.246.4:30002 | 30002:30002 | - | - | learned |
-| 2300 | 192.168.246.4:32300 | 32300:32300 | - | - | learned |
-| 2301 | 192.168.246.4:32301 | 32301:32301 | - | - | learned |
+| 2300 | 192.168.246.4:22300 | 22300:22300 | - | - | learned |
+| 2301 | 192.168.246.4:22301 | 22301:22301 | - | - | learned |
 
 #### Router BGP VRFs
 
@@ -684,13 +684,13 @@ router bgp 65101
       redistribute learned
    !
    vlan 2300
-      rd 192.168.246.4:32300
-      route-target both 32300:32300
+      rd 192.168.246.4:22300
+      route-target both 22300:22300
       redistribute learned
    !
    vlan 2301
-      rd 192.168.246.4:32301
-      route-target both 32301:32301
+      rd 192.168.246.4:22301
+      route-target both 22301:22301
       redistribute learned
    !
    address-family evpn

@@ -277,6 +277,7 @@ vlan 4094
 | Interface | Description | Mode | VLANs | Native VLAN | Trunk Group | Channel-Group |
 | --------- | ----------- | ---- | ----- | ----------- | ----------- | ------------- |
 | Ethernet1 | MLAG_PEER_s1-leaf4_Ethernet1 | *trunk | *- | *- | *['LEAF_PEER_L3', 'MLAG'] | 1 |
+| Ethernet4 | s1-host2_Eth1 | *trunk | *20,2300,2301 | *- | *- | 4 |
 | Ethernet6 | MLAG_PEER_s1-leaf4_Ethernet6 | *trunk | *- | *- | *['LEAF_PEER_L3', 'MLAG'] | 1 |
 
 *Inherited from Port-Channel Interface
@@ -287,7 +288,6 @@ vlan 4094
 | --------- | ----------- | -----| ------------- | ---------- | ----| ---- | -------- | ------ | ------- |
 | Ethernet2 | P2P_LINK_TO_S1-SPINE1_Ethernet4 | routed | - | 192.168.51.9/31 | default | 1500 | False | - | - |
 | Ethernet3 | P2P_LINK_TO_S1-SPINE2_Ethernet4 | routed | - | 192.168.51.11/31 | default | 1500 | False | - | - |
-| Ethernet4 | Routed_Interface_4 | routed | - | 10.192.195.21/24 | bluevrf | 9000 | False | - | - |
 
 #### Ethernet Interfaces Device Configuration
 
@@ -313,12 +313,9 @@ interface Ethernet3
    ip address 192.168.51.11/31
 !
 interface Ethernet4
-   description Routed_Interface_4
+   description s1-host2_Eth1
    no shutdown
-   mtu 9000
-   no switchport
-   vrf bluevrf
-   ip address 10.192.195.21/24
+   channel-group 4 mode active
 !
 interface Ethernet6
    description MLAG_PEER_s1-leaf4_Ethernet6
@@ -335,6 +332,7 @@ interface Ethernet6
 | Interface | Description | Type | Mode | VLANs | Native VLAN | Trunk Group | LACP Fallback Timeout | LACP Fallback Mode | MLAG ID | EVPN ESI |
 | --------- | ----------- | ---- | ---- | ----- | ----------- | ------------| --------------------- | ------------------ | ------- | -------- |
 | Port-Channel1 | MLAG_PEER_s1-leaf4_Po1 | switched | trunk | - | - | ['LEAF_PEER_L3', 'MLAG'] | - | - | - | - |
+| Port-Channel4 | s1-host2_PortChannel | switched | trunk | 20,2300,2301 | - | - | - | - | 4 | - |
 
 #### Port-Channel Interfaces Device Configuration
 
@@ -347,6 +345,14 @@ interface Port-Channel1
    switchport mode trunk
    switchport trunk group LEAF_PEER_L3
    switchport trunk group MLAG
+!
+interface Port-Channel4
+   description s1-host2_PortChannel
+   no shutdown
+   switchport
+   switchport trunk allowed vlan 20,2300,2301
+   switchport mode trunk
+   mlag 4
 ```
 
 ### Loopback Interfaces
@@ -464,8 +470,8 @@ interface Vlan4094
 | VLAN | VNI | Flood List | Multicast Group |
 | ---- | --- | ---------- | --------------- |
 | 20 | 30002 | - | - |
-| 2300 | 32300 | - | - |
-| 2301 | 32301 | - | - |
+| 2300 | 22300 | - | - |
+| 2301 | 22301 | - | - |
 
 ##### VRF to VNI and Multicast Group Mappings
 
@@ -483,8 +489,8 @@ interface Vxlan1
    vxlan virtual-router encapsulation mac-address mlag-system-id
    vxlan udp-port 4789
    vxlan vlan 20 vni 30002
-   vxlan vlan 2300 vni 32300
-   vxlan vlan 2301 vni 32301
+   vxlan vlan 2300 vni 22300
+   vxlan vlan 2301 vni 22301
    vxlan vrf bluevrf vni 100
 ```
 
@@ -627,8 +633,8 @@ ASN Notation: asplain
 | VLAN | Route-Distinguisher | Both Route-Target | Import Route Target | Export Route-Target | Redistribute |
 | ---- | ------------------- | ----------------- | ------------------- | ------------------- | ------------ |
 | 20 | 192.168.246.5:30002 | 30002:30002 | - | - | learned |
-| 2300 | 192.168.246.5:32300 | 32300:32300 | - | - | learned |
-| 2301 | 192.168.246.5:32301 | 32301:32301 | - | - | learned |
+| 2300 | 192.168.246.5:22300 | 22300:22300 | - | - | learned |
+| 2301 | 192.168.246.5:22301 | 22301:22301 | - | - | learned |
 
 #### Router BGP VRFs
 
@@ -685,13 +691,13 @@ router bgp 65102
       redistribute learned
    !
    vlan 2300
-      rd 192.168.246.5:32300
-      route-target both 32300:32300
+      rd 192.168.246.5:22300
+      route-target both 22300:22300
       redistribute learned
    !
    vlan 2301
-      rd 192.168.246.5:32301
-      route-target both 32301:32301
+      rd 192.168.246.5:22301
+      route-target both 22301:22301
       redistribute learned
    !
    address-family evpn

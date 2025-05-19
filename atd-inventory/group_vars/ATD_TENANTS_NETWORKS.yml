@@ -32,11 +32,13 @@ tenants:
         svis:
           - id: 2300
             name: bluenet1
+            vni_override: 22300
             # tags: [opzone]
             enabled: true
             ip_address_virtual: 192.168.11.1/24
           - id: 2301
             name: bluenet2
+            vni_override: 22301
             # tags: [opzone]
             enabled: true
             ip_address_virtual: 192.168.12.1/24

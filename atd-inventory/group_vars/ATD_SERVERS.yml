@@ -1,8 +1,8 @@
 ---
-# port_profiles:
-#   - profile: int_trunk_host
-#     mode: trunk
-#     vlans: "20,2300,2301"
+port_profiles:
+  - profile: int_trunk_host
+    mode: trunk
+    vlans: "20,2300,2301"
 #   - profile: int_access_host
 #     mode: access
 #     vlans: "2300"
@@ -27,7 +27,7 @@
 
   
 
-# servers:
+servers:
 #   - name: s1-host1
 #     rack: pod1
 #     adapters:
@@ -40,16 +40,16 @@
 #           description: PortChannel
 #           mode: active
 
-  # - name: s1-host2
-  #   rack: pod2
-  #   adapters:
-  #     - endpoint_ports: [Eth1, Eth2]
-  #       switch_ports: [Ethernet4, Ethernet4]
-  #       switches: [s1-leaf3, s1-leaf4]
-  #       profile: TRUNK
-  #       port_channel:
-  #         description: PortChannel
-  #         mode: active
+  - name: s1-host2
+    rack: pod2
+    adapters:
+      - endpoint_ports: [Eth1, Eth2]
+        switch_ports: [Ethernet4, Ethernet4]
+        switches: [s1-leaf3, s1-leaf4]
+        profile: int_trunk_host
+        port_channel:
+          description: PortChannel
+          mode: active
 
 # Sample network port config as access ports
 # For multiport port-channel setup, please use the connected endpoint example above

@@ -13,6 +13,9 @@
   - [VTEP Loopback VXLAN Tunnel Source Interfaces (VTEPs Only)](#vtep-loopback-vxlan-tunnel-source-interfaces-vteps-only)
   - [VTEP Loopback Node allocation](#vtep-loopback-node-allocation)
 - [Connected Endpoints](#connected-endpoints)
+  - [Connected Endpoint Keys](#connected-endpoint-keys)
+  - [Servers](#servers)
+  - [Port Profiles](#port-profiles)
 
 ## Fabric Switches and Management IP
 
@@ -104,4 +107,32 @@
 
 ## Connected Endpoints
 
-No connected endpoint configured!
+### Connected Endpoint Keys
+
+| Key | Type | Description |
+| --- | ---- | ----------- |
+| access_points | access_point | Access Point |
+| cameras | camera | Camera |
+| cpes | cpe | CPE |
+| firewalls | firewall | Firewall |
+| generic_devices | generic_device | Generic Device |
+| load_balancers | load_balancer | Load Balancer |
+| phones | phone | Phone |
+| printers | printer | Printer |
+| routers | router | Router |
+| servers | server | Server |
+| storage_arrays | storage_array | Storage Array |
+| workstations | workstation | Workstation |
+
+### Servers
+
+| Name | Port | Fabric Device | Fabric Port | Description | Shutdown | Type | Mode | VLANs | Profile |
+| ---- | ---- | ------------- | ------------| ----------- | -------- | ---- | ---- | ----- | ------- |
+| s1-host2 | Eth1 | s1-leaf3 | Ethernet4 | s1-host2_Eth1 | False | switched | trunk | 20,2300,2301 | int_trunk_host |
+| s1-host2 | Eth2 | s1-leaf4 | Ethernet4 | s1-host2_Eth2 | False | switched | trunk | 20,2300,2301 | int_trunk_host |
+
+### Port Profiles
+
+| Profile Name | Parent Profile |
+| ------------ | -------------- |
+| int_trunk_host | - |

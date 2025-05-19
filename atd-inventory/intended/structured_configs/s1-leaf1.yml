@@ -97,18 +97,18 @@ router_bgp:
   vlans:
   - id: 2300
     tenant: bluevrf_tenant
-    rd: 192.168.246.3:32300
+    rd: 192.168.246.3:22300
     route_targets:
       both:
-      - 32300:32300
+      - 22300:22300
     redistribute_routes:
     - learned
   - id: 2301
     tenant: bluevrf_tenant
-    rd: 192.168.246.3:32301
+    rd: 192.168.246.3:22301
     route_targets:
       both:
-      - 32301:32301
+      - 22301:22301
     redistribute_routes:
     - learned
   - id: 20
@@ -336,9 +336,9 @@ vxlan_interface:
       virtual_router_encapsulation_mac_address: mlag-system-id
       vlans:
       - id: 2300
-        vni: 32300
+        vni: 22300
       - id: 2301
-        vni: 32301
+        vni: 22301
       - id: 20
         vni: 30002
       vrfs:
