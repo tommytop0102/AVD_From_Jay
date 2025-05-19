@@ -94,16 +94,24 @@ router_bgp:
     neighbors:
     - ip_address: 10.255.251.1
       peer_group: MLAG-IPv4-UNDERLAY-PEER
-  vlan_aware_bundles:
-  - name: bluevrf
-    rd: 192.168.246.3:100
+  vlans:
+  - id: 2300
+    tenant: bluevrf_tenant
+    rd: 192.168.246.3:32300
     route_targets:
       both:
-      - 100:100
+      - 32300:32300
     redistribute_routes:
     - learned
-    vlan: 2300-2301
-  - name: ExternalNetwork
+  - id: 2301
+    tenant: bluevrf_tenant
+    rd: 192.168.246.3:32301
+    route_targets:
+      both:
+      - 32301:32301
+    redistribute_routes:
+    - learned
+  - id: 20
     tenant: bluevrf_tenant
     rd: 192.168.246.3:30002
     route_targets:
@@ -111,7 +119,6 @@ router_bgp:
       - 30002:30002
     redistribute_routes:
     - learned
-    vlan: '20'
 static_routes:
 - vrf: default
   destination_address_prefix: 0.0.0.0/0

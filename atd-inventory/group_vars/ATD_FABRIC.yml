@@ -5,7 +5,7 @@
 fabric_name: ATD_FABRIC
 
 # Enable vlan aware bundles
-evpn_vlan_aware_bundles: true
+# evpn_vlan_aware_bundles : true
 
 # Select rfc5549 or ospf, not both
 

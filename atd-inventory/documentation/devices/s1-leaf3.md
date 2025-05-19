@@ -622,12 +622,13 @@ ASN Notation: asplain
 | ---------- | -------- | ------------- |
 | EVPN-OVERLAY-PEERS | True | default |
 
-#### Router BGP VLAN Aware Bundles
+#### Router BGP VLANs
 
-| VLAN Aware Bundle | Route-Distinguisher | Both Route-Target | Import Route Target | Export Route-Target | Redistribute | VLANs |
-| ----------------- | ------------------- | ----------------- | ------------------- | ------------------- | ------------ | ----- |
-| bluevrf | 192.168.246.5:100 | 100:100 | - | - | learned | 2300-2301 |
-| ExternalNetwork | 192.168.246.5:30002 | 30002:30002 | - | - | learned | 20 |
+| VLAN | Route-Distinguisher | Both Route-Target | Import Route Target | Export Route-Target | Redistribute |
+| ---- | ------------------- | ----------------- | ------------------- | ------------------- | ------------ |
+| 20 | 192.168.246.5:30002 | 30002:30002 | - | - | learned |
+| 2300 | 192.168.246.5:32300 | 32300:32300 | - | - | learned |
+| 2301 | 192.168.246.5:32301 | 32301:32301 | - | - | learned |
 
 #### Router BGP VRFs
 
@@ -678,17 +679,20 @@ router bgp 65102
    neighbor 192.168.246.2 description s1-spine2
    redistribute connected route-map RM-CONN-2-BGP
    !
-   vlan-aware-bundle bluevrf
-      rd 192.168.246.5:100
-      route-target both 100:100
-      redistribute learned
-      vlan 2300-2301
-   !
-   vlan-aware-bundle ExternalNetwork
+   vlan 20
       rd 192.168.246.5:30002
       route-target both 30002:30002
       redistribute learned
-      vlan 20
+   !
+   vlan 2300
+      rd 192.168.246.5:32300
+      route-target both 32300:32300
+      redistribute learned
+   !
+   vlan 2301
+      rd 192.168.246.5:32301
+      route-target both 32301:32301
+      redistribute learned
    !
    address-family evpn
       neighbor EVPN-OVERLAY-PEERS activate
